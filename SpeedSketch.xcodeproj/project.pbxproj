@@ -12,6 +12,45 @@
 		796D4C602087B48600F22EAF /* Incremental.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C4A2087B48500F22EAF /* Incremental.swift */; };
 		796D4C712087B48600F22EAF /* IncrementalArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C5C2087B48500F22EAF /* IncrementalArray.swift */; };
 		796D4C722087B48600F22EAF /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C5D2087B48600F22EAF /* Helpers.swift */; };
+		796D4C772087B6B200F22EAF /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C762087B6B200F22EAF /* Reducer.swift */; };
+		796D4C792087B6B900F22EAF /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C782087B6B900F22EAF /* Command.swift */; };
+		796D4C7C2087B73900F22EAF /* Monoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C7B2087B73900F22EAF /* Monoid.swift */; };
+		796D4CA12087B76F00F22EAF /* Func.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C7D2087B76600F22EAF /* Func.swift */; };
+		796D4CA22087B76F00F22EAF /* Filterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C7E2087B76600F22EAF /* Filterable.swift */; };
+		796D4CA32087B76F00F22EAF /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C7F2087B76600F22EAF /* Curry.swift */; };
+		796D4CA42087B76F00F22EAF /* Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C802087B76600F22EAF /* Equatable.swift */; };
+		796D4CA52087B76F00F22EAF /* KeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C812087B76600F22EAF /* KeyPath.swift */; };
+		796D4CA62087B76F00F22EAF /* Ring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C822087B76700F22EAF /* Ring.swift */; };
+		796D4CA72087B76F00F22EAF /* Endo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C832087B76700F22EAF /* Endo.swift */; };
+		796D4CA82087B76F00F22EAF /* Tuple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C842087B76700F22EAF /* Tuple.swift */; };
+		796D4CA92087B76F00F22EAF /* Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C852087B76700F22EAF /* Unit.swift */; };
+		796D4CAA2087B76F00F22EAF /* Comparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C862087B76700F22EAF /* Comparable.swift */; };
+		796D4CAB2087B76F00F22EAF /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C872087B76700F22EAF /* Operators.swift */; };
+		796D4CAC2087B76F00F22EAF /* PrecedenceGroups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C882087B76700F22EAF /* PrecedenceGroups.swift */; };
+		796D4CAD2087B76F00F22EAF /* Strong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C892087B76700F22EAF /* Strong.swift */; };
+		796D4CAE2087B76F00F22EAF /* Hole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C8A2087B76800F22EAF /* Hole.swift */; };
+		796D4CAF2087B76F00F22EAF /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C8B2087B76800F22EAF /* Optional.swift */; };
+		796D4CB02087B76F00F22EAF /* Parallel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C8C2087B76800F22EAF /* Parallel.swift */; };
+		796D4CB12087B76F00F22EAF /* Alt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C8D2087B76800F22EAF /* Alt.swift */; };
+		796D4CB22087B76F00F22EAF /* FreeNearSemiring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C8E2087B76900F22EAF /* FreeNearSemiring.swift */; };
+		796D4CB32087B76F00F22EAF /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C8F2087B76900F22EAF /* Collection.swift */; };
+		796D4CB42087B76F00F22EAF /* Plus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C902087B76900F22EAF /* Plus.swift */; };
+		796D4CB52087B76F00F22EAF /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C912087B76900F22EAF /* Set.swift */; };
+		796D4CB62087B76F00F22EAF /* Comparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C922087B76A00F22EAF /* Comparator.swift */; };
+		796D4CB72087B76F00F22EAF /* Semiring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C932087B76A00F22EAF /* Semiring.swift */; };
+		796D4CB82087B76F00F22EAF /* CommutativeRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C942087B76A00F22EAF /* CommutativeRing.swift */; };
+		796D4CB92087B76F00F22EAF /* HeytingAlgebra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C952087B76B00F22EAF /* HeytingAlgebra.swift */; };
+		796D4CBA2087B76F00F22EAF /* Never.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C962087B76B00F22EAF /* Never.swift */; };
+		796D4CBB2087B76F00F22EAF /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C972087B76B00F22EAF /* Sequence.swift */; };
+		796D4CBC2087B76F00F22EAF /* NearSemiring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C982087B76C00F22EAF /* NearSemiring.swift */; };
+		796D4CBD2087B76F00F22EAF /* IO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C992087B76C00F22EAF /* IO.swift */; };
+		796D4CBE2087B76F00F22EAF /* Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C9A2087B76C00F22EAF /* Function.swift */; };
+		796D4CBF2087B76F00F22EAF /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C9B2087B76D00F22EAF /* Field.swift */; };
+		796D4CC02087B76F00F22EAF /* Tagged.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C9C2087B76D00F22EAF /* Tagged.swift */; };
+		796D4CC12087B76F00F22EAF /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C9D2087B76D00F22EAF /* String.swift */; };
+		796D4CC22087B76F00F22EAF /* EuclideanRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C9E2087B76E00F22EAF /* EuclideanRing.swift */; };
+		796D4CC32087B76F00F22EAF /* Semigroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C9F2087B76E00F22EAF /* Semigroup.swift */; };
+		796D4CC42087B76F00F22EAF /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4CA02087B76E00F22EAF /* Array.swift */; };
 		F224161F1D04337E003EB080 /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F224161E1D04337E003EB080 /* RingView.swift */; };
 		F2B07F471CED5DC300B03432 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D0CD921CDD78CC0097775C /* AppDelegate.swift */; };
 		F2B07F481CED5DC600B03432 /* CanvasMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D0CD941CDD78CC0097775C /* CanvasMainViewController.swift */; };
@@ -31,6 +70,45 @@
 		796D4C4A2087B48500F22EAF /* Incremental.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Incremental.swift; sourceTree = "<group>"; };
 		796D4C5C2087B48500F22EAF /* IncrementalArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncrementalArray.swift; sourceTree = "<group>"; };
 		796D4C5D2087B48600F22EAF /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		796D4C762087B6B200F22EAF /* Reducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reducer.swift; sourceTree = "<group>"; };
+		796D4C782087B6B900F22EAF /* Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		796D4C7B2087B73900F22EAF /* Monoid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monoid.swift; sourceTree = "<group>"; };
+		796D4C7D2087B76600F22EAF /* Func.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Func.swift; sourceTree = "<group>"; };
+		796D4C7E2087B76600F22EAF /* Filterable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filterable.swift; sourceTree = "<group>"; };
+		796D4C7F2087B76600F22EAF /* Curry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Curry.swift; sourceTree = "<group>"; };
+		796D4C802087B76600F22EAF /* Equatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Equatable.swift; sourceTree = "<group>"; };
+		796D4C812087B76600F22EAF /* KeyPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyPath.swift; sourceTree = "<group>"; };
+		796D4C822087B76700F22EAF /* Ring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ring.swift; sourceTree = "<group>"; };
+		796D4C832087B76700F22EAF /* Endo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endo.swift; sourceTree = "<group>"; };
+		796D4C842087B76700F22EAF /* Tuple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tuple.swift; sourceTree = "<group>"; };
+		796D4C852087B76700F22EAF /* Unit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Unit.swift; sourceTree = "<group>"; };
+		796D4C862087B76700F22EAF /* Comparable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comparable.swift; sourceTree = "<group>"; };
+		796D4C872087B76700F22EAF /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		796D4C882087B76700F22EAF /* PrecedenceGroups.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrecedenceGroups.swift; sourceTree = "<group>"; };
+		796D4C892087B76700F22EAF /* Strong.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strong.swift; sourceTree = "<group>"; };
+		796D4C8A2087B76800F22EAF /* Hole.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hole.swift; sourceTree = "<group>"; };
+		796D4C8B2087B76800F22EAF /* Optional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
+		796D4C8C2087B76800F22EAF /* Parallel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parallel.swift; sourceTree = "<group>"; };
+		796D4C8D2087B76800F22EAF /* Alt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alt.swift; sourceTree = "<group>"; };
+		796D4C8E2087B76900F22EAF /* FreeNearSemiring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeNearSemiring.swift; sourceTree = "<group>"; };
+		796D4C8F2087B76900F22EAF /* Collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		796D4C902087B76900F22EAF /* Plus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plus.swift; sourceTree = "<group>"; };
+		796D4C912087B76900F22EAF /* Set.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Set.swift; sourceTree = "<group>"; };
+		796D4C922087B76A00F22EAF /* Comparator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comparator.swift; sourceTree = "<group>"; };
+		796D4C932087B76A00F22EAF /* Semiring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Semiring.swift; sourceTree = "<group>"; };
+		796D4C942087B76A00F22EAF /* CommutativeRing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommutativeRing.swift; sourceTree = "<group>"; };
+		796D4C952087B76B00F22EAF /* HeytingAlgebra.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeytingAlgebra.swift; sourceTree = "<group>"; };
+		796D4C962087B76B00F22EAF /* Never.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Never.swift; sourceTree = "<group>"; };
+		796D4C972087B76B00F22EAF /* Sequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sequence.swift; sourceTree = "<group>"; };
+		796D4C982087B76C00F22EAF /* NearSemiring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearSemiring.swift; sourceTree = "<group>"; };
+		796D4C992087B76C00F22EAF /* IO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IO.swift; sourceTree = "<group>"; };
+		796D4C9A2087B76C00F22EAF /* Function.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Function.swift; sourceTree = "<group>"; };
+		796D4C9B2087B76D00F22EAF /* Field.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
+		796D4C9C2087B76D00F22EAF /* Tagged.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tagged.swift; sourceTree = "<group>"; };
+		796D4C9D2087B76D00F22EAF /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		796D4C9E2087B76E00F22EAF /* EuclideanRing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EuclideanRing.swift; sourceTree = "<group>"; };
+		796D4C9F2087B76E00F22EAF /* Semigroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Semigroup.swift; sourceTree = "<group>"; };
+		796D4CA02087B76E00F22EAF /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		F214544C1CFB4E23003F77B0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F224161E1D04337E003EB080 /* RingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RingView.swift; sourceTree = "<group>"; };
 		F280FF8E1CE04D1F00CF8D37 /* CGDrawingEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGDrawingEngine.swift; sourceTree = "<group>"; };
@@ -61,6 +139,8 @@
 		796D4C462087B33600F22EAF /* Prelude */ = {
 			isa = PBXGroup;
 			children = (
+				796D4C7A2087B70100F22EAF /* Pointfreeco */,
+				796D4C732087B5B600F22EAF /* ElmArchitecture */,
 				796D4C472087B34900F22EAF /* Incremental */,
 			);
 			path = Prelude;
@@ -76,6 +156,59 @@
 				796D4C482087B48400F22EAF /* IncrementalStdLib.swift */,
 			);
 			path = Incremental;
+			sourceTree = "<group>";
+		};
+		796D4C732087B5B600F22EAF /* ElmArchitecture */ = {
+			isa = PBXGroup;
+			children = (
+				796D4C762087B6B200F22EAF /* Reducer.swift */,
+				796D4C782087B6B900F22EAF /* Command.swift */,
+			);
+			path = ElmArchitecture;
+			sourceTree = "<group>";
+		};
+		796D4C7A2087B70100F22EAF /* Pointfreeco */ = {
+			isa = PBXGroup;
+			children = (
+				796D4C7B2087B73900F22EAF /* Monoid.swift */,
+				796D4C8D2087B76800F22EAF /* Alt.swift */,
+				796D4CA02087B76E00F22EAF /* Array.swift */,
+				796D4C8F2087B76900F22EAF /* Collection.swift */,
+				796D4C942087B76A00F22EAF /* CommutativeRing.swift */,
+				796D4C862087B76700F22EAF /* Comparable.swift */,
+				796D4C922087B76A00F22EAF /* Comparator.swift */,
+				796D4C7F2087B76600F22EAF /* Curry.swift */,
+				796D4C832087B76700F22EAF /* Endo.swift */,
+				796D4C802087B76600F22EAF /* Equatable.swift */,
+				796D4C9E2087B76E00F22EAF /* EuclideanRing.swift */,
+				796D4C9B2087B76D00F22EAF /* Field.swift */,
+				796D4C7E2087B76600F22EAF /* Filterable.swift */,
+				796D4C8E2087B76900F22EAF /* FreeNearSemiring.swift */,
+				796D4C7D2087B76600F22EAF /* Func.swift */,
+				796D4C9A2087B76C00F22EAF /* Function.swift */,
+				796D4C952087B76B00F22EAF /* HeytingAlgebra.swift */,
+				796D4C8A2087B76800F22EAF /* Hole.swift */,
+				796D4C992087B76C00F22EAF /* IO.swift */,
+				796D4C812087B76600F22EAF /* KeyPath.swift */,
+				796D4C982087B76C00F22EAF /* NearSemiring.swift */,
+				796D4C962087B76B00F22EAF /* Never.swift */,
+				796D4C872087B76700F22EAF /* Operators.swift */,
+				796D4C8B2087B76800F22EAF /* Optional.swift */,
+				796D4C8C2087B76800F22EAF /* Parallel.swift */,
+				796D4C902087B76900F22EAF /* Plus.swift */,
+				796D4C882087B76700F22EAF /* PrecedenceGroups.swift */,
+				796D4C822087B76700F22EAF /* Ring.swift */,
+				796D4C9F2087B76E00F22EAF /* Semigroup.swift */,
+				796D4C932087B76A00F22EAF /* Semiring.swift */,
+				796D4C972087B76B00F22EAF /* Sequence.swift */,
+				796D4C912087B76900F22EAF /* Set.swift */,
+				796D4C9D2087B76D00F22EAF /* String.swift */,
+				796D4C892087B76700F22EAF /* Strong.swift */,
+				796D4C9C2087B76D00F22EAF /* Tagged.swift */,
+				796D4C842087B76700F22EAF /* Tuple.swift */,
+				796D4C852087B76700F22EAF /* Unit.swift */,
+			);
+			path = Pointfreeco;
 			sourceTree = "<group>";
 		};
 		F25618401CDEC7BD00C01A7C /* Frameworks */ = {
@@ -219,18 +352,57 @@
 			buildActionMask = 2147483647;
 			files = (
 				796D4C5E2087B48600F22EAF /* IncrementalStdLib.swift in Sources */,
+				796D4CB12087B76F00F22EAF /* Alt.swift in Sources */,
 				F224161F1D04337E003EB080 /* RingView.swift in Sources */,
+				796D4CBD2087B76F00F22EAF /* IO.swift in Sources */,
 				F2B07F471CED5DC300B03432 /* AppDelegate.swift in Sources */,
+				796D4CA72087B76F00F22EAF /* Endo.swift in Sources */,
+				796D4CB92087B76F00F22EAF /* HeytingAlgebra.swift in Sources */,
+				796D4CC42087B76F00F22EAF /* Array.swift in Sources */,
+				796D4CBB2087B76F00F22EAF /* Sequence.swift in Sources */,
+				796D4CBA2087B76F00F22EAF /* Never.swift in Sources */,
+				796D4CB02087B76F00F22EAF /* Parallel.swift in Sources */,
+				796D4CA82087B76F00F22EAF /* Tuple.swift in Sources */,
+				796D4CB42087B76F00F22EAF /* Plus.swift in Sources */,
+				796D4CA12087B76F00F22EAF /* Func.swift in Sources */,
+				796D4CC32087B76F00F22EAF /* Semigroup.swift in Sources */,
+				796D4CAD2087B76F00F22EAF /* Strong.swift in Sources */,
+				796D4CA52087B76F00F22EAF /* KeyPath.swift in Sources */,
 				796D4C712087B48600F22EAF /* IncrementalArray.swift in Sources */,
 				796D4C722087B48600F22EAF /* Helpers.swift in Sources */,
+				796D4CAB2087B76F00F22EAF /* Operators.swift in Sources */,
+				796D4CB52087B76F00F22EAF /* Set.swift in Sources */,
+				796D4CA42087B76F00F22EAF /* Equatable.swift in Sources */,
 				F2B07F481CED5DC600B03432 /* CanvasMainViewController.swift in Sources */,
+				796D4CB22087B76F00F22EAF /* FreeNearSemiring.swift in Sources */,
+				796D4CBE2087B76F00F22EAF /* Function.swift in Sources */,
+				796D4CA22087B76F00F22EAF /* Filterable.swift in Sources */,
 				F2DE48981D022A7200C9E0DC /* CGMathExtensions.swift in Sources */,
+				796D4CAF2087B76F00F22EAF /* Optional.swift in Sources */,
+				796D4CBF2087B76F00F22EAF /* Field.swift in Sources */,
+				796D4CA92087B76F00F22EAF /* Unit.swift in Sources */,
+				796D4CAE2087B76F00F22EAF /* Hole.swift in Sources */,
+				796D4CB62087B76F00F22EAF /* Comparator.swift in Sources */,
+				796D4CB82087B76F00F22EAF /* CommutativeRing.swift in Sources */,
+				796D4CC02087B76F00F22EAF /* Tagged.swift in Sources */,
+				796D4C792087B6B900F22EAF /* Command.swift in Sources */,
 				F2B07F491CED5DC900B03432 /* CGDrawingEngine.swift in Sources */,
+				796D4CA62087B76F00F22EAF /* Ring.swift in Sources */,
+				796D4CBC2087B76F00F22EAF /* NearSemiring.swift in Sources */,
+				796D4C7C2087B73900F22EAF /* Monoid.swift in Sources */,
+				796D4C772087B6B200F22EAF /* Reducer.swift in Sources */,
 				F2D0CDA91CDD9C5F0097775C /* StrokeCollection.swift in Sources */,
+				796D4CB32087B76F00F22EAF /* Collection.swift in Sources */,
+				796D4CB72087B76F00F22EAF /* Semiring.swift in Sources */,
 				796D4C5F2087B48600F22EAF /* Incremental+NSObject.swift in Sources */,
+				796D4CC12087B76F00F22EAF /* String.swift in Sources */,
+				796D4CC22087B76F00F22EAF /* EuclideanRing.swift in Sources */,
+				796D4CAA2087B76F00F22EAF /* Comparable.swift in Sources */,
+				796D4CA32087B76F00F22EAF /* Curry.swift in Sources */,
 				F2C4FBAF1CEE9E4600F3A052 /* RingControl.swift in Sources */,
 				F2B35B191CFCE5960014550C /* CanvasContainerView.swift in Sources */,
 				796D4C602087B48600F22EAF /* Incremental.swift in Sources */,
+				796D4CAC2087B76F00F22EAF /* PrecedenceGroups.swift in Sources */,
 				F2D0CDA71CDD82900097775C /* StrokeGestureRecognizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
