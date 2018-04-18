@@ -48,16 +48,25 @@ public protocol MapCommandProtocol {
 extension MapCommand: MapCommandProtocol { }
 
 public protocol PrintCommand: Command {
-    static func print(_ text: String) -> Self
+    // TODO: it always prints array, not sure how to pass on the value as vararg
+    // maybe its still impossible https://bugs.swift.org/browse/SR-128
+    static func print(_ items: Any...) -> Self
+    static func debugPrint(_ items: Any...) -> Self
 }
 extension Run: PrintCommand {
-    public static func print(_ text: String) -> Run {
-        return Run { _ in Swift.print(text) }
+    public static func print(_ items: Any...) -> Run {
+        return Run { _ in Swift.print(items) }
+    }
+    public static func debugPrint(_ items: Any...) -> Run {
+        return Run { _ in Swift.debugPrint(items) }
     }
 }
 extension MapCommand: PrintCommand where C: PrintCommand {
-    public static func print(_ text: String) -> MapCommand {
-        return MapCommand { _ in C.print(text) }
+    public static func print(_ items: Any...) -> MapCommand {
+        return MapCommand { _ in C.print(items) }
+    }
+    public static func debugPrint(_ items: Any...) -> MapCommand {
+        return MapCommand { _ in C.debugPrint(items) }
     }
 }
 

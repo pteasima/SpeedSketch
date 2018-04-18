@@ -96,7 +96,14 @@ class CanvasMainViewController: UIViewController, UIGestureRecognizerDelegate {
         leftRingControl = ringControl
         let imageNames = ["Calligraphy", "Ink", "Debug"]
         for (index, ringView) in leftRingControl.ringViews.enumerated() {
-            ringView.actionClosure = configurations[index]
+            ringView.actionClosure = {
+                switch index {
+                case 0: dispatch(.selectDebug)
+                case 1: dispatch(.selectCalligraphy)
+                default: dispatch(.selectInk)
+                }
+            }
+            //ringView.actionClosure = configurations[index]
             let imageView = UIImageView(frame: ringView.bounds.insetBy(dx: ringImageInset, dy: ringImageInset))
             imageView.image = UIImage(named: imageNames[index])
             imageView.autoresizingMask = [.flexibleLeftMargin, .flexibleRightMargin, .flexibleTopMargin, .flexibleBottomMargin]

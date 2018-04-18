@@ -8,16 +8,8 @@
 
 import UIKit
 
-
-enum StrokeViewDisplayOptions {
-    case debug
-    case calligraphy
-    case ink
-}
-
-
 class StrokeCGView: UIView {
-    var displayOptions = StrokeViewDisplayOptions.calligraphy {
+    var displayOptions = StrokeDisplayOption.calligraphy {
         didSet {
             if strokeCollection != nil {
                 setNeedsDisplay()

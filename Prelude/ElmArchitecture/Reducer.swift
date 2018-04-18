@@ -1,8 +1,10 @@
+public typealias Reduce<S, C: Command> = (inout S, C.Action) -> C
+
 public struct Reducer<S,C: Command> {
     public typealias A = C.Action
-    public let reduce: (inout S, A) -> C
+    public let reduce: Reduce<S,C>
 
-    public init(reduce: @escaping (inout S, A) -> C) {
+    public init(reduce: @escaping Reduce<S,C>) {
         self.reduce = reduce
     }
 }

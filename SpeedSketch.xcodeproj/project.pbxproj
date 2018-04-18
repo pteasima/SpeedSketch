@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		793EEB482087C37700B8953C /* RingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB3B2087C37600B8953C /* RingControl.swift */; };
+		793EEB492087C37700B8953C /* CGDrawingEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB3C2087C37600B8953C /* CGDrawingEngine.swift */; };
+		793EEB4A2087C37700B8953C /* CanvasMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB3D2087C37600B8953C /* CanvasMainViewController.swift */; };
+		793EEB4B2087C37700B8953C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 793EEB3E2087C37600B8953C /* Assets.xcassets */; };
+		793EEB4C2087C37700B8953C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 793EEB3F2087C37600B8953C /* LaunchScreen.storyboard */; };
+		793EEB4D2087C37700B8953C /* StrokeGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB412087C37600B8953C /* StrokeGestureRecognizer.swift */; };
+		793EEB4E2087C37700B8953C /* CanvasContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB422087C37600B8953C /* CanvasContainerView.swift */; };
+		793EEB4F2087C37700B8953C /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB432087C37600B8953C /* RingView.swift */; };
+		793EEB502087C37700B8953C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB442087C37600B8953C /* AppDelegate.swift */; };
+		793EEB512087C37700B8953C /* CGMathExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB452087C37600B8953C /* CGMathExtensions.swift */; };
+		793EEB522087C37700B8953C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 793EEB462087C37600B8953C /* Info.plist */; };
+		793EEB532087C37700B8953C /* StrokeCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB472087C37600B8953C /* StrokeCollection.swift */; };
+		793EEB592087C3B200B8953C /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB582087C3B200B8953C /* State.swift */; };
+		793EEB5C2087C57500B8953C /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB5B2087C57500B8953C /* Driver.swift */; };
+		793EEB5E2087C6AE00B8953C /* Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB5D2087C6AE00B8953C /* Update.swift */; };
 		796D4C5E2087B48600F22EAF /* IncrementalStdLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C482087B48400F22EAF /* IncrementalStdLib.swift */; };
 		796D4C5F2087B48600F22EAF /* Incremental+NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C492087B48400F22EAF /* Incremental+NSObject.swift */; };
 		796D4C602087B48600F22EAF /* Incremental.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C4A2087B48500F22EAF /* Incremental.swift */; };
@@ -51,20 +66,24 @@
 		796D4CC22087B76F00F22EAF /* EuclideanRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C9E2087B76E00F22EAF /* EuclideanRing.swift */; };
 		796D4CC32087B76F00F22EAF /* Semigroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C9F2087B76E00F22EAF /* Semigroup.swift */; };
 		796D4CC42087B76F00F22EAF /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4CA02087B76E00F22EAF /* Array.swift */; };
-		F224161F1D04337E003EB080 /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F224161E1D04337E003EB080 /* RingView.swift */; };
-		F2B07F471CED5DC300B03432 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D0CD921CDD78CC0097775C /* AppDelegate.swift */; };
-		F2B07F481CED5DC600B03432 /* CanvasMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D0CD941CDD78CC0097775C /* CanvasMainViewController.swift */; };
-		F2B07F491CED5DC900B03432 /* CGDrawingEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F280FF8E1CE04D1F00CF8D37 /* CGDrawingEngine.swift */; };
-		F2B35B191CFCE5960014550C /* CanvasContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B35B181CFCE5960014550C /* CanvasContainerView.swift */; };
-		F2C4FBAF1CEE9E4600F3A052 /* RingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C4FBAE1CEE9E4600F3A052 /* RingControl.swift */; };
-		F2D0CD9A1CDD78CC0097775C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2D0CD991CDD78CC0097775C /* Assets.xcassets */; };
-		F2D0CD9D1CDD78CC0097775C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2D0CD9B1CDD78CC0097775C /* LaunchScreen.storyboard */; };
-		F2D0CDA71CDD82900097775C /* StrokeGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D0CDA61CDD82900097775C /* StrokeGestureRecognizer.swift */; };
-		F2D0CDA91CDD9C5F0097775C /* StrokeCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D0CDA81CDD9C5F0097775C /* StrokeCollection.swift */; };
-		F2DE48981D022A7200C9E0DC /* CGMathExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DE48971D022A7200C9E0DC /* CGMathExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		793EEB3B2087C37600B8953C /* RingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RingControl.swift; sourceTree = "<group>"; };
+		793EEB3C2087C37600B8953C /* CGDrawingEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGDrawingEngine.swift; sourceTree = "<group>"; };
+		793EEB3D2087C37600B8953C /* CanvasMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasMainViewController.swift; sourceTree = "<group>"; };
+		793EEB3E2087C37600B8953C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		793EEB402087C37600B8953C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		793EEB412087C37600B8953C /* StrokeGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrokeGestureRecognizer.swift; sourceTree = "<group>"; };
+		793EEB422087C37600B8953C /* CanvasContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasContainerView.swift; sourceTree = "<group>"; };
+		793EEB432087C37600B8953C /* RingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RingView.swift; sourceTree = "<group>"; };
+		793EEB442087C37600B8953C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		793EEB452087C37600B8953C /* CGMathExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGMathExtensions.swift; sourceTree = "<group>"; };
+		793EEB462087C37600B8953C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		793EEB472087C37600B8953C /* StrokeCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrokeCollection.swift; sourceTree = "<group>"; };
+		793EEB582087C3B200B8953C /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		793EEB5B2087C57500B8953C /* Driver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Driver.swift; sourceTree = "<group>"; };
+		793EEB5D2087C6AE00B8953C /* Update.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Update.swift; sourceTree = "<group>"; };
 		796D4C482087B48400F22EAF /* IncrementalStdLib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncrementalStdLib.swift; sourceTree = "<group>"; };
 		796D4C492087B48400F22EAF /* Incremental+NSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Incremental+NSObject.swift"; sourceTree = "<group>"; };
 		796D4C4A2087B48500F22EAF /* Incremental.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Incremental.swift; sourceTree = "<group>"; };
@@ -110,19 +129,7 @@
 		796D4C9F2087B76E00F22EAF /* Semigroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Semigroup.swift; sourceTree = "<group>"; };
 		796D4CA02087B76E00F22EAF /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		F214544C1CFB4E23003F77B0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		F224161E1D04337E003EB080 /* RingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RingView.swift; sourceTree = "<group>"; };
-		F280FF8E1CE04D1F00CF8D37 /* CGDrawingEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGDrawingEngine.swift; sourceTree = "<group>"; };
-		F2B35B181CFCE5960014550C /* CanvasContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasContainerView.swift; sourceTree = "<group>"; };
-		F2C4FBAE1CEE9E4600F3A052 /* RingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RingControl.swift; sourceTree = "<group>"; };
 		F2D0CD8F1CDD78CC0097775C /* SpeedSketch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeedSketch.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F2D0CD921CDD78CC0097775C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F2D0CD941CDD78CC0097775C /* CanvasMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasMainViewController.swift; sourceTree = "<group>"; };
-		F2D0CD991CDD78CC0097775C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F2D0CD9C1CDD78CC0097775C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F2D0CD9E1CDD78CC0097775C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F2D0CDA61CDD82900097775C /* StrokeGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrokeGestureRecognizer.swift; sourceTree = "<group>"; };
-		F2D0CDA81CDD9C5F0097775C /* StrokeCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrokeCollection.swift; sourceTree = "<group>"; };
-		F2DE48971D022A7200C9E0DC /* CGMathExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGMathExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +143,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		793EEB3A2087C37600B8953C /* SpeedSketch */ = {
+			isa = PBXGroup;
+			children = (
+				793EEB542087C37D00B8953C /* Model */,
+				793EEB562087C39700B8953C /* Update */,
+				793EEB552087C38C00B8953C /* View */,
+				793EEB3B2087C37600B8953C /* RingControl.swift */,
+				793EEB3C2087C37600B8953C /* CGDrawingEngine.swift */,
+				793EEB3D2087C37600B8953C /* CanvasMainViewController.swift */,
+				793EEB3E2087C37600B8953C /* Assets.xcassets */,
+				793EEB3F2087C37600B8953C /* LaunchScreen.storyboard */,
+				793EEB412087C37600B8953C /* StrokeGestureRecognizer.swift */,
+				793EEB422087C37600B8953C /* CanvasContainerView.swift */,
+				793EEB432087C37600B8953C /* RingView.swift */,
+				793EEB442087C37600B8953C /* AppDelegate.swift */,
+				793EEB452087C37600B8953C /* CGMathExtensions.swift */,
+				793EEB462087C37600B8953C /* Info.plist */,
+				793EEB472087C37600B8953C /* StrokeCollection.swift */,
+			);
+			path = SpeedSketch;
+			sourceTree = "<group>";
+		};
+		793EEB542087C37D00B8953C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				793EEB582087C3B200B8953C /* State.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		793EEB552087C38C00B8953C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		793EEB562087C39700B8953C /* Update */ = {
+			isa = PBXGroup;
+			children = (
+				793EEB5D2087C6AE00B8953C /* Update.swift */,
+			);
+			path = Update;
+			sourceTree = "<group>";
+		};
 		796D4C462087B33600F22EAF /* Prelude */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +215,7 @@
 			children = (
 				796D4C762087B6B200F22EAF /* Reducer.swift */,
 				796D4C782087B6B900F22EAF /* Command.swift */,
+				793EEB5B2087C57500B8953C /* Driver.swift */,
 			);
 			path = ElmArchitecture;
 			sourceTree = "<group>";
@@ -218,29 +271,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F280FF901CE04D5300CF8D37 /* Drawing Engine */ = {
-			isa = PBXGroup;
-			children = (
-				F280FF8E1CE04D1F00CF8D37 /* CGDrawingEngine.swift */,
-			);
-			name = "Drawing Engine";
-			sourceTree = "<group>";
-		};
-		F280FF911CE04D7E00CF8D37 /* Stroke Model and Capture */ = {
-			isa = PBXGroup;
-			children = (
-				F2D0CDA61CDD82900097775C /* StrokeGestureRecognizer.swift */,
-				F2D0CDA81CDD9C5F0097775C /* StrokeCollection.swift */,
-			);
-			name = "Stroke Model and Capture";
-			sourceTree = "<group>";
-		};
 		F2D0CD861CDD78CC0097775C = {
 			isa = PBXGroup;
 			children = (
 				796D4C462087B33600F22EAF /* Prelude */,
 				F214544C1CFB4E23003F77B0 /* README.md */,
-				F2D0CD911CDD78CC0097775C /* SpeedSketch */,
+				793EEB3A2087C37600B8953C /* SpeedSketch */,
 				F2D0CD901CDD78CC0097775C /* Products */,
 				F25618401CDEC7BD00C01A7C /* Frameworks */,
 			);
@@ -252,32 +288,6 @@
 				F2D0CD8F1CDD78CC0097775C /* SpeedSketch.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		F2D0CD911CDD78CC0097775C /* SpeedSketch */ = {
-			isa = PBXGroup;
-			children = (
-				F2D0CD921CDD78CC0097775C /* AppDelegate.swift */,
-				F2D0CD941CDD78CC0097775C /* CanvasMainViewController.swift */,
-				F2B35B181CFCE5960014550C /* CanvasContainerView.swift */,
-				F2E932E51CEF870B00B1238F /* Controls */,
-				F280FF901CE04D5300CF8D37 /* Drawing Engine */,
-				F280FF911CE04D7E00CF8D37 /* Stroke Model and Capture */,
-				F2DE48971D022A7200C9E0DC /* CGMathExtensions.swift */,
-				F2D0CD991CDD78CC0097775C /* Assets.xcassets */,
-				F2D0CD9B1CDD78CC0097775C /* LaunchScreen.storyboard */,
-				F2D0CD9E1CDD78CC0097775C /* Info.plist */,
-			);
-			path = SpeedSketch;
-			sourceTree = "<group>";
-		};
-		F2E932E51CEF870B00B1238F /* Controls */ = {
-			isa = PBXGroup;
-			children = (
-				F2C4FBAE1CEE9E4600F3A052 /* RingControl.swift */,
-				F224161E1D04337E003EB080 /* RingView.swift */,
-			);
-			name = Controls;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,8 +349,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2D0CD9D1CDD78CC0097775C /* LaunchScreen.storyboard in Resources */,
-				F2D0CD9A1CDD78CC0097775C /* Assets.xcassets in Resources */,
+				793EEB4B2087C37700B8953C /* Assets.xcassets in Resources */,
+				793EEB4C2087C37700B8953C /* LaunchScreen.storyboard in Resources */,
+				793EEB522087C37700B8953C /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,12 +362,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				793EEB5C2087C57500B8953C /* Driver.swift in Sources */,
+				793EEB492087C37700B8953C /* CGDrawingEngine.swift in Sources */,
+				793EEB5E2087C6AE00B8953C /* Update.swift in Sources */,
 				796D4C5E2087B48600F22EAF /* IncrementalStdLib.swift in Sources */,
 				796D4CB12087B76F00F22EAF /* Alt.swift in Sources */,
-				F224161F1D04337E003EB080 /* RingView.swift in Sources */,
 				796D4CBD2087B76F00F22EAF /* IO.swift in Sources */,
-				F2B07F471CED5DC300B03432 /* AppDelegate.swift in Sources */,
 				796D4CA72087B76F00F22EAF /* Endo.swift in Sources */,
+				793EEB592087C3B200B8953C /* State.swift in Sources */,
 				796D4CB92087B76F00F22EAF /* HeytingAlgebra.swift in Sources */,
 				796D4CC42087B76F00F22EAF /* Array.swift in Sources */,
 				796D4CBB2087B76F00F22EAF /* Sequence.swift in Sources */,
@@ -367,31 +380,35 @@
 				796D4CA12087B76F00F22EAF /* Func.swift in Sources */,
 				796D4CC32087B76F00F22EAF /* Semigroup.swift in Sources */,
 				796D4CAD2087B76F00F22EAF /* Strong.swift in Sources */,
+				793EEB502087C37700B8953C /* AppDelegate.swift in Sources */,
 				796D4CA52087B76F00F22EAF /* KeyPath.swift in Sources */,
 				796D4C712087B48600F22EAF /* IncrementalArray.swift in Sources */,
 				796D4C722087B48600F22EAF /* Helpers.swift in Sources */,
 				796D4CAB2087B76F00F22EAF /* Operators.swift in Sources */,
 				796D4CB52087B76F00F22EAF /* Set.swift in Sources */,
+				793EEB4F2087C37700B8953C /* RingView.swift in Sources */,
 				796D4CA42087B76F00F22EAF /* Equatable.swift in Sources */,
-				F2B07F481CED5DC600B03432 /* CanvasMainViewController.swift in Sources */,
 				796D4CB22087B76F00F22EAF /* FreeNearSemiring.swift in Sources */,
 				796D4CBE2087B76F00F22EAF /* Function.swift in Sources */,
+				793EEB512087C37700B8953C /* CGMathExtensions.swift in Sources */,
+				793EEB4E2087C37700B8953C /* CanvasContainerView.swift in Sources */,
+				793EEB4D2087C37700B8953C /* StrokeGestureRecognizer.swift in Sources */,
 				796D4CA22087B76F00F22EAF /* Filterable.swift in Sources */,
-				F2DE48981D022A7200C9E0DC /* CGMathExtensions.swift in Sources */,
 				796D4CAF2087B76F00F22EAF /* Optional.swift in Sources */,
 				796D4CBF2087B76F00F22EAF /* Field.swift in Sources */,
+				793EEB532087C37700B8953C /* StrokeCollection.swift in Sources */,
 				796D4CA92087B76F00F22EAF /* Unit.swift in Sources */,
 				796D4CAE2087B76F00F22EAF /* Hole.swift in Sources */,
 				796D4CB62087B76F00F22EAF /* Comparator.swift in Sources */,
 				796D4CB82087B76F00F22EAF /* CommutativeRing.swift in Sources */,
+				793EEB4A2087C37700B8953C /* CanvasMainViewController.swift in Sources */,
 				796D4CC02087B76F00F22EAF /* Tagged.swift in Sources */,
 				796D4C792087B6B900F22EAF /* Command.swift in Sources */,
-				F2B07F491CED5DC900B03432 /* CGDrawingEngine.swift in Sources */,
 				796D4CA62087B76F00F22EAF /* Ring.swift in Sources */,
 				796D4CBC2087B76F00F22EAF /* NearSemiring.swift in Sources */,
 				796D4C7C2087B73900F22EAF /* Monoid.swift in Sources */,
+				793EEB482087C37700B8953C /* RingControl.swift in Sources */,
 				796D4C772087B6B200F22EAF /* Reducer.swift in Sources */,
-				F2D0CDA91CDD9C5F0097775C /* StrokeCollection.swift in Sources */,
 				796D4CB32087B76F00F22EAF /* Collection.swift in Sources */,
 				796D4CB72087B76F00F22EAF /* Semiring.swift in Sources */,
 				796D4C5F2087B48600F22EAF /* Incremental+NSObject.swift in Sources */,
@@ -399,21 +416,18 @@
 				796D4CC22087B76F00F22EAF /* EuclideanRing.swift in Sources */,
 				796D4CAA2087B76F00F22EAF /* Comparable.swift in Sources */,
 				796D4CA32087B76F00F22EAF /* Curry.swift in Sources */,
-				F2C4FBAF1CEE9E4600F3A052 /* RingControl.swift in Sources */,
-				F2B35B191CFCE5960014550C /* CanvasContainerView.swift in Sources */,
 				796D4C602087B48600F22EAF /* Incremental.swift in Sources */,
 				796D4CAC2087B76F00F22EAF /* PrecedenceGroups.swift in Sources */,
-				F2D0CDA71CDD82900097775C /* StrokeGestureRecognizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F2D0CD9B1CDD78CC0097775C /* LaunchScreen.storyboard */ = {
+		793EEB3F2087C37600B8953C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F2D0CD9C1CDD78CC0097775C /* Base */,
+				793EEB402087C37600B8953C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
