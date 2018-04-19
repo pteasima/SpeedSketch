@@ -1,11 +1,3 @@
-//
-//  Bindings.swift
-//  SpeedSketch
-//
-//  Created by Petr Šíma on 19/04/2018.
-//  Copyright © 2018 UIKit. All rights reserved.
-//
-
 import Foundation
 import UIKit
 import ObjectiveC
@@ -39,7 +31,7 @@ struct Bindings<Base: BindingsProvider> {
         self.base = base
     }
 
-    subscript<Value: Equatable>(_ keyPath: ReferenceWritableKeyPath<Base,Value>) -> I<Value>? {
+    subscript<Value>(_ keyPath: ReferenceWritableKeyPath<Base,Value>) -> I<Value>? {
         get {
             return base.bindingsStorage.dict[keyPath].map { $0.1 as! I<Value> }
         }

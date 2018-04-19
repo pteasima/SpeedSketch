@@ -123,6 +123,9 @@ class CanvasMainViewController: UIViewController, UIGestureRecognizerDelegate {
 
         _ = cgView
             |> \.bindings[\.displayOption] .~ state[\.strokeDisplayOption]
+//            |> \.bindings[\.constraintsTo[view]] .~ I(constant: Optional([]))
+
+
     }
 
 // MARK: View setup helpers.
