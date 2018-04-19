@@ -23,6 +23,7 @@
 		793EEB5C2087C57500B8953C /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB5B2087C57500B8953C /* Driver.swift */; };
 		793EEB5E2087C6AE00B8953C /* Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB5D2087C6AE00B8953C /* Update.swift */; };
 		793EEB6020888B7F00B8953C /* RawRepresentable+AllCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB5F20888B7F00B8953C /* RawRepresentable+AllCases.swift */; };
+		793EEB632088939300B8953C /* Bindings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB622088939300B8953C /* Bindings.swift */; };
 		796D4C5E2087B48600F22EAF /* IncrementalStdLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C482087B48400F22EAF /* IncrementalStdLib.swift */; };
 		796D4C5F2087B48600F22EAF /* Incremental+NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C492087B48400F22EAF /* Incremental+NSObject.swift */; };
 		796D4C602087B48600F22EAF /* Incremental.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C4A2087B48500F22EAF /* Incremental.swift */; };
@@ -86,6 +87,7 @@
 		793EEB5B2087C57500B8953C /* Driver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Driver.swift; sourceTree = "<group>"; };
 		793EEB5D2087C6AE00B8953C /* Update.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Update.swift; sourceTree = "<group>"; };
 		793EEB5F20888B7F00B8953C /* RawRepresentable+AllCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RawRepresentable+AllCases.swift"; sourceTree = "<group>"; };
+		793EEB622088939300B8953C /* Bindings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindings.swift; sourceTree = "<group>"; };
 		796D4C482087B48400F22EAF /* IncrementalStdLib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncrementalStdLib.swift; sourceTree = "<group>"; };
 		796D4C492087B48400F22EAF /* Incremental+NSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Incremental+NSObject.swift"; sourceTree = "<group>"; };
 		796D4C4A2087B48500F22EAF /* Incremental.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Incremental.swift; sourceTree = "<group>"; };
@@ -190,9 +192,18 @@
 			path = Update;
 			sourceTree = "<group>";
 		};
+		793EEB612088937C00B8953C /* Bindings */ = {
+			isa = PBXGroup;
+			children = (
+				793EEB622088939300B8953C /* Bindings.swift */,
+			);
+			path = Bindings;
+			sourceTree = "<group>";
+		};
 		796D4C462087B33600F22EAF /* Prelude */ = {
 			isa = PBXGroup;
 			children = (
+				793EEB612088937C00B8953C /* Bindings */,
 				796D4C7A2087B70100F22EAF /* Pointfreeco */,
 				796D4C732087B5B600F22EAF /* ElmArchitecture */,
 				796D4C472087B34900F22EAF /* Incremental */,
@@ -382,6 +393,7 @@
 				796D4CA82087B76F00F22EAF /* Tuple.swift in Sources */,
 				796D4CB42087B76F00F22EAF /* Plus.swift in Sources */,
 				796D4CA12087B76F00F22EAF /* Func.swift in Sources */,
+				793EEB632088939300B8953C /* Bindings.swift in Sources */,
 				796D4CC32087B76F00F22EAF /* Semigroup.swift in Sources */,
 				796D4CAD2087B76F00F22EAF /* Strong.swift in Sources */,
 				793EEB502087C37700B8953C /* AppDelegate.swift in Sources */,
