@@ -121,6 +121,28 @@ class CanvasMainViewController: UIViewController, UIGestureRecognizerDelegate {
         setupPencilUI()
 
 
+        _ = ringControl
+//            |> \.constraintsTo[view] .~ sizeToParent()
+            |> \.bindings[\.constraintsTo[view]] .~ state[\.strokeDisplayOption].map(eq: { _ in false }) {
+                $0 == .ink ? [
+                                equal(\.leftAnchor),
+                                equal(\.bottomAnchor),
+//                    equal(\.centerXAnchor),
+//                    equal(\.centerYAnchor),
+                    equal(\.widthAnchor, to: 100), // this ignores `view`, should have its own keypath
+                    equal(\.heightAnchor, to: 100),
+                    ] : [
+                        //            equal(\.leftAnchor),
+                        //            equal(\.bottomAnchor),
+                        equal(\.centerXAnchor),
+                        equal(\.centerYAnchor),
+                        equal(\.widthAnchor, to: 100),
+                        equal(\.heightAnchor, to: 100),
+                ]
+
+
+        }
+
         _ = cgView
             |> \.bindings[\.displayOption] .~ state[\.strokeDisplayOption]
 //            |> \.bindings[\.constraintsTo[view]] .~ I(constant: Optional([]))

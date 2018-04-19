@@ -2,8 +2,6 @@ import Foundation
 import UIKit
 import ObjectiveC
 
-typealias Constraint = (_ child: UIView, _ parent: UIView) -> NSLayoutConstraint
-
 protocol LayoutProvider: class { }
 
 private var storageKey = 0
@@ -12,14 +10,13 @@ extension LayoutProvider where Self: UIView {
         get { return Layout(self) }
         set { /*needed to enable writing to the keyPath, do nothing here*/ }
     }
-    //we store the AnyI just for shits. We could probably get away with not storing it and returning empty from the subscript getter to make the compiler happy. Maybe it will be usefull in debugging and testing?
+    // TODO: Capturing the view surely creates a leak, we should have a weak wrapper that remembers the hashValue even after the view deallocates
     fileprivate var layoutStorage: DictWrapper<UIView, [(Constraint, NSLayoutConstraint)]> {
-        fatalError()
-//        return objc_getAssociatedObject(self, &storageKey) as? DictWrapper<AnyKeyPath, (Disposable, AnyI)> ?? {
-//            let newStorage = DictWrapper<AnyKeyPath, (Disposable, AnyI)>()
-//            objc_setAssociatedObject(self, &storageKey, newStorage, .OBJC_ASSOCIATION_RETAIN)
-//            return newStorage
-//            }()
+        return objc_getAssociatedObject(self, &storageKey) as? DictWrapper<UIView, [(Constraint, NSLayoutConstraint)]> ?? {
+            let newStorage = DictWrapper<UIView, [(Constraint, NSLayoutConstraint)]>()
+            objc_setAssociatedObject(self, &storageKey, newStorage, .OBJC_ASSOCIATION_RETAIN)
+            return newStorage
+            }()
     }
 }
 extension UIView: LayoutProvider { }
@@ -39,6 +36,7 @@ struct Layout<Base: UIView> {
             return base.layoutStorage.dict[to]?.map { $0.0 }
         }
         set {
+            base.translatesAutoresizingMaskIntoConstraints = false
             if let oldConstraints = base.layoutStorage.dict[to]?.map({ $0.1 }) {
                 NSLayoutConstraint.deactivate(oldConstraints)
             }

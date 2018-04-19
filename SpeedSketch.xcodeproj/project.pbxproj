@@ -40,6 +40,7 @@
 		793EEB812088BB4700B8953C /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB7D2088BB4700B8953C /* Choice.swift */; };
 		793EEB832088C81400B8953C /* Lens+KeyPathExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB822088C81400B8953C /* Lens+KeyPathExtensions.swift */; };
 		793EEB862088DF1700B8953C /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB852088DF1700B8953C /* Layout.swift */; };
+		793EEB882089148200B8953C /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB872089148200B8953C /* Constraints.swift */; };
 		796D4C5E2087B48600F22EAF /* IncrementalStdLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C482087B48400F22EAF /* IncrementalStdLib.swift */; };
 		796D4C5F2087B48600F22EAF /* Incremental+NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C492087B48400F22EAF /* Incremental+NSObject.swift */; };
 		796D4C602087B48600F22EAF /* Incremental.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C4A2087B48500F22EAF /* Incremental.swift */; };
@@ -120,6 +121,7 @@
 		793EEB7D2088BB4700B8953C /* Choice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Choice.swift; sourceTree = "<group>"; };
 		793EEB822088C81400B8953C /* Lens+KeyPathExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lens+KeyPathExtensions.swift"; sourceTree = "<group>"; };
 		793EEB852088DF1700B8953C /* Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
+		793EEB872089148200B8953C /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
 		796D4C482087B48400F22EAF /* IncrementalStdLib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncrementalStdLib.swift; sourceTree = "<group>"; };
 		796D4C492087B48400F22EAF /* Incremental+NSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Incremental+NSObject.swift"; sourceTree = "<group>"; };
 		796D4C4A2087B48500F22EAF /* Incremental.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Incremental.swift; sourceTree = "<group>"; };
@@ -265,6 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				793EEB852088DF1700B8953C /* Layout.swift */,
+				793EEB872089148200B8953C /* Constraints.swift */,
 			);
 			path = Layout;
 			sourceTree = "<group>";
@@ -500,6 +503,7 @@
 				793EEB742088BAC200B8953C /* Fold.swift in Sources */,
 				796D4CAE2087B76F00F22EAF /* Hole.swift in Sources */,
 				796D4CB62087B76F00F22EAF /* Comparator.swift in Sources */,
+				793EEB882089148200B8953C /* Constraints.swift in Sources */,
 				796D4CB82087B76F00F22EAF /* CommutativeRing.swift in Sources */,
 				793EEB4A2087C37700B8953C /* CanvasMainViewController.swift in Sources */,
 				796D4CC02087B76F00F22EAF /* Tagged.swift in Sources */,
