@@ -9,13 +9,13 @@
 import UIKit
 
 class StrokeCGView: UIView {
-    var displayOptions = StrokeDisplayOption.calligraphy {
+    var displayOption = StrokeDisplayOption.calligraphy {
         didSet {
             if strokeCollection != nil {
                 setNeedsDisplay()
             }
             for view in dirtyRectViews {
-                view.isHidden = displayOptions != .debug
+                view.isHidden = displayOption != .debug
             }
         }
     }
@@ -135,7 +135,7 @@ class StrokeCGView: UIView {
         interpolate between the points to get a smooother curve.
      */
     func draw(stroke: Stroke, in rect:CGRect, isActive active: Bool) {
-        let displayOptions = self.displayOptions
+        let displayOptions = self.displayOption
         
         let updateRanges = stroke.updatedRanges()
         if displayOptions == .debug {

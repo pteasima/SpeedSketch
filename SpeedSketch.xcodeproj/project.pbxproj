@@ -24,6 +24,21 @@
 		793EEB5E2087C6AE00B8953C /* Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB5D2087C6AE00B8953C /* Update.swift */; };
 		793EEB6020888B7F00B8953C /* RawRepresentable+AllCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB5F20888B7F00B8953C /* RawRepresentable+AllCases.swift */; };
 		793EEB632088939300B8953C /* Bindings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB622088939300B8953C /* Bindings.swift */; };
+		793EEB6F2088BAC200B8953C /* Getter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB652088BAC100B8953C /* Getter.swift */; };
+		793EEB702088BAC200B8953C /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB662088BAC100B8953C /* Review.swift */; };
+		793EEB712088BAC200B8953C /* Forget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB672088BAC100B8953C /* Forget.swift */; };
+		793EEB722088BAC200B8953C /* Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB682088BAC100B8953C /* Index.swift */; };
+		793EEB732088BAC200B8953C /* Traversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB692088BAC100B8953C /* Traversal.swift */; };
+		793EEB742088BAC200B8953C /* Fold.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB6A2088BAC100B8953C /* Fold.swift */; };
+		793EEB752088BAC200B8953C /* Setter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB6B2088BAC100B8953C /* Setter.swift */; };
+		793EEB762088BAC200B8953C /* KeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB6C2088BAC100B8953C /* KeyPath.swift */; };
+		793EEB772088BAC200B8953C /* Prism.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB6D2088BAC100B8953C /* Prism.swift */; };
+		793EEB782088BAC200B8953C /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB6E2088BAC100B8953C /* Star.swift */; };
+		793EEB7E2088BB4700B8953C /* Either.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB7A2088BB4700B8953C /* Either.swift */; };
+		793EEB7F2088BB4700B8953C /* Nested.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB7B2088BB4700B8953C /* Nested.swift */; };
+		793EEB802088BB4700B8953C /* EitherIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB7C2088BB4700B8953C /* EitherIO.swift */; };
+		793EEB812088BB4700B8953C /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB7D2088BB4700B8953C /* Choice.swift */; };
+		793EEB832088C81400B8953C /* Lens+KeyPathExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB822088C81400B8953C /* Lens+KeyPathExtensions.swift */; };
 		796D4C5E2087B48600F22EAF /* IncrementalStdLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C482087B48400F22EAF /* IncrementalStdLib.swift */; };
 		796D4C5F2087B48600F22EAF /* Incremental+NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C492087B48400F22EAF /* Incremental+NSObject.swift */; };
 		796D4C602087B48600F22EAF /* Incremental.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C4A2087B48500F22EAF /* Incremental.swift */; };
@@ -36,7 +51,7 @@
 		796D4CA22087B76F00F22EAF /* Filterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C7E2087B76600F22EAF /* Filterable.swift */; };
 		796D4CA32087B76F00F22EAF /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C7F2087B76600F22EAF /* Curry.swift */; };
 		796D4CA42087B76F00F22EAF /* Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C802087B76600F22EAF /* Equatable.swift */; };
-		796D4CA52087B76F00F22EAF /* KeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C812087B76600F22EAF /* KeyPath.swift */; };
+		796D4CA52087B76F00F22EAF /* OpticsKeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C812087B76600F22EAF /* OpticsKeyPath.swift */; };
 		796D4CA62087B76F00F22EAF /* Ring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C822087B76700F22EAF /* Ring.swift */; };
 		796D4CA72087B76F00F22EAF /* Endo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C832087B76700F22EAF /* Endo.swift */; };
 		796D4CA82087B76F00F22EAF /* Tuple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C842087B76700F22EAF /* Tuple.swift */; };
@@ -88,6 +103,21 @@
 		793EEB5D2087C6AE00B8953C /* Update.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Update.swift; sourceTree = "<group>"; };
 		793EEB5F20888B7F00B8953C /* RawRepresentable+AllCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RawRepresentable+AllCases.swift"; sourceTree = "<group>"; };
 		793EEB622088939300B8953C /* Bindings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindings.swift; sourceTree = "<group>"; };
+		793EEB652088BAC100B8953C /* Getter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Getter.swift; sourceTree = "<group>"; };
+		793EEB662088BAC100B8953C /* Review.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		793EEB672088BAC100B8953C /* Forget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forget.swift; sourceTree = "<group>"; };
+		793EEB682088BAC100B8953C /* Index.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Index.swift; sourceTree = "<group>"; };
+		793EEB692088BAC100B8953C /* Traversal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Traversal.swift; sourceTree = "<group>"; };
+		793EEB6A2088BAC100B8953C /* Fold.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fold.swift; sourceTree = "<group>"; };
+		793EEB6B2088BAC100B8953C /* Setter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Setter.swift; sourceTree = "<group>"; };
+		793EEB6C2088BAC100B8953C /* KeyPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyPath.swift; sourceTree = "<group>"; };
+		793EEB6D2088BAC100B8953C /* Prism.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prism.swift; sourceTree = "<group>"; };
+		793EEB6E2088BAC100B8953C /* Star.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
+		793EEB7A2088BB4700B8953C /* Either.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Either.swift; sourceTree = "<group>"; };
+		793EEB7B2088BB4700B8953C /* Nested.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nested.swift; sourceTree = "<group>"; };
+		793EEB7C2088BB4700B8953C /* EitherIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EitherIO.swift; sourceTree = "<group>"; };
+		793EEB7D2088BB4700B8953C /* Choice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Choice.swift; sourceTree = "<group>"; };
+		793EEB822088C81400B8953C /* Lens+KeyPathExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lens+KeyPathExtensions.swift"; sourceTree = "<group>"; };
 		796D4C482087B48400F22EAF /* IncrementalStdLib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncrementalStdLib.swift; sourceTree = "<group>"; };
 		796D4C492087B48400F22EAF /* Incremental+NSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Incremental+NSObject.swift"; sourceTree = "<group>"; };
 		796D4C4A2087B48500F22EAF /* Incremental.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Incremental.swift; sourceTree = "<group>"; };
@@ -100,7 +130,7 @@
 		796D4C7E2087B76600F22EAF /* Filterable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filterable.swift; sourceTree = "<group>"; };
 		796D4C7F2087B76600F22EAF /* Curry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Curry.swift; sourceTree = "<group>"; };
 		796D4C802087B76600F22EAF /* Equatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Equatable.swift; sourceTree = "<group>"; };
-		796D4C812087B76600F22EAF /* KeyPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyPath.swift; sourceTree = "<group>"; };
+		796D4C812087B76600F22EAF /* OpticsKeyPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpticsKeyPath.swift; sourceTree = "<group>"; };
 		796D4C822087B76700F22EAF /* Ring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ring.swift; sourceTree = "<group>"; };
 		796D4C832087B76700F22EAF /* Endo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endo.swift; sourceTree = "<group>"; };
 		796D4C842087B76700F22EAF /* Tuple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tuple.swift; sourceTree = "<group>"; };
@@ -196,8 +226,37 @@
 			isa = PBXGroup;
 			children = (
 				793EEB622088939300B8953C /* Bindings.swift */,
+				793EEB822088C81400B8953C /* Lens+KeyPathExtensions.swift */,
 			);
 			path = Bindings;
+			sourceTree = "<group>";
+		};
+		793EEB642088BAC100B8953C /* Optics */ = {
+			isa = PBXGroup;
+			children = (
+				793EEB652088BAC100B8953C /* Getter.swift */,
+				793EEB662088BAC100B8953C /* Review.swift */,
+				793EEB672088BAC100B8953C /* Forget.swift */,
+				793EEB682088BAC100B8953C /* Index.swift */,
+				793EEB692088BAC100B8953C /* Traversal.swift */,
+				793EEB6A2088BAC100B8953C /* Fold.swift */,
+				793EEB6B2088BAC100B8953C /* Setter.swift */,
+				793EEB6C2088BAC100B8953C /* KeyPath.swift */,
+				793EEB6D2088BAC100B8953C /* Prism.swift */,
+				793EEB6E2088BAC100B8953C /* Star.swift */,
+			);
+			path = Optics;
+			sourceTree = "<group>";
+		};
+		793EEB792088BB4700B8953C /* Either */ = {
+			isa = PBXGroup;
+			children = (
+				793EEB7A2088BB4700B8953C /* Either.swift */,
+				793EEB7B2088BB4700B8953C /* Nested.swift */,
+				793EEB7C2088BB4700B8953C /* EitherIO.swift */,
+				793EEB7D2088BB4700B8953C /* Choice.swift */,
+			);
+			path = Either;
 			sourceTree = "<group>";
 		};
 		796D4C462087B33600F22EAF /* Prelude */ = {
@@ -237,6 +296,8 @@
 		796D4C7A2087B70100F22EAF /* Pointfreeco */ = {
 			isa = PBXGroup;
 			children = (
+				793EEB792088BB4700B8953C /* Either */,
+				793EEB642088BAC100B8953C /* Optics */,
 				796D4C7B2087B73900F22EAF /* Monoid.swift */,
 				796D4C8D2087B76800F22EAF /* Alt.swift */,
 				796D4CA02087B76E00F22EAF /* Array.swift */,
@@ -256,7 +317,7 @@
 				796D4C952087B76B00F22EAF /* HeytingAlgebra.swift */,
 				796D4C8A2087B76800F22EAF /* Hole.swift */,
 				796D4C992087B76C00F22EAF /* IO.swift */,
-				796D4C812087B76600F22EAF /* KeyPath.swift */,
+				796D4C812087B76600F22EAF /* OpticsKeyPath.swift */,
 				796D4C982087B76C00F22EAF /* NearSemiring.swift */,
 				796D4C962087B76B00F22EAF /* Never.swift */,
 				796D4C872087B76700F22EAF /* Operators.swift */,
@@ -380,15 +441,20 @@
 				793EEB5C2087C57500B8953C /* Driver.swift in Sources */,
 				793EEB492087C37700B8953C /* CGDrawingEngine.swift in Sources */,
 				793EEB5E2087C6AE00B8953C /* Update.swift in Sources */,
+				793EEB7F2088BB4700B8953C /* Nested.swift in Sources */,
 				796D4C5E2087B48600F22EAF /* IncrementalStdLib.swift in Sources */,
+				793EEB702088BAC200B8953C /* Review.swift in Sources */,
 				796D4CB12087B76F00F22EAF /* Alt.swift in Sources */,
 				796D4CBD2087B76F00F22EAF /* IO.swift in Sources */,
 				796D4CA72087B76F00F22EAF /* Endo.swift in Sources */,
 				793EEB592087C3B200B8953C /* State.swift in Sources */,
 				796D4CB92087B76F00F22EAF /* HeytingAlgebra.swift in Sources */,
+				793EEB732088BAC200B8953C /* Traversal.swift in Sources */,
 				796D4CC42087B76F00F22EAF /* Array.swift in Sources */,
 				796D4CBB2087B76F00F22EAF /* Sequence.swift in Sources */,
 				796D4CBA2087B76F00F22EAF /* Never.swift in Sources */,
+				793EEB712088BAC200B8953C /* Forget.swift in Sources */,
+				793EEB7E2088BB4700B8953C /* Either.swift in Sources */,
 				796D4CB02087B76F00F22EAF /* Parallel.swift in Sources */,
 				796D4CA82087B76F00F22EAF /* Tuple.swift in Sources */,
 				796D4CB42087B76F00F22EAF /* Plus.swift in Sources */,
@@ -397,38 +463,48 @@
 				796D4CC32087B76F00F22EAF /* Semigroup.swift in Sources */,
 				796D4CAD2087B76F00F22EAF /* Strong.swift in Sources */,
 				793EEB502087C37700B8953C /* AppDelegate.swift in Sources */,
-				796D4CA52087B76F00F22EAF /* KeyPath.swift in Sources */,
+				796D4CA52087B76F00F22EAF /* OpticsKeyPath.swift in Sources */,
 				796D4C712087B48600F22EAF /* IncrementalArray.swift in Sources */,
 				796D4C722087B48600F22EAF /* Helpers.swift in Sources */,
 				796D4CAB2087B76F00F22EAF /* Operators.swift in Sources */,
 				796D4CB52087B76F00F22EAF /* Set.swift in Sources */,
 				793EEB4F2087C37700B8953C /* RingView.swift in Sources */,
+				793EEB832088C81400B8953C /* Lens+KeyPathExtensions.swift in Sources */,
 				796D4CA42087B76F00F22EAF /* Equatable.swift in Sources */,
 				796D4CB22087B76F00F22EAF /* FreeNearSemiring.swift in Sources */,
+				793EEB6F2088BAC200B8953C /* Getter.swift in Sources */,
 				796D4CBE2087B76F00F22EAF /* Function.swift in Sources */,
 				793EEB512087C37700B8953C /* CGMathExtensions.swift in Sources */,
+				793EEB772088BAC200B8953C /* Prism.swift in Sources */,
 				793EEB4E2087C37700B8953C /* CanvasContainerView.swift in Sources */,
 				793EEB4D2087C37700B8953C /* StrokeGestureRecognizer.swift in Sources */,
 				796D4CA22087B76F00F22EAF /* Filterable.swift in Sources */,
+				793EEB782088BAC200B8953C /* Star.swift in Sources */,
 				796D4CAF2087B76F00F22EAF /* Optional.swift in Sources */,
 				796D4CBF2087B76F00F22EAF /* Field.swift in Sources */,
 				793EEB532087C37700B8953C /* StrokeCollection.swift in Sources */,
+				793EEB802088BB4700B8953C /* EitherIO.swift in Sources */,
 				796D4CA92087B76F00F22EAF /* Unit.swift in Sources */,
+				793EEB742088BAC200B8953C /* Fold.swift in Sources */,
 				796D4CAE2087B76F00F22EAF /* Hole.swift in Sources */,
 				796D4CB62087B76F00F22EAF /* Comparator.swift in Sources */,
 				796D4CB82087B76F00F22EAF /* CommutativeRing.swift in Sources */,
 				793EEB4A2087C37700B8953C /* CanvasMainViewController.swift in Sources */,
 				796D4CC02087B76F00F22EAF /* Tagged.swift in Sources */,
+				793EEB762088BAC200B8953C /* KeyPath.swift in Sources */,
 				796D4C792087B6B900F22EAF /* Command.swift in Sources */,
 				796D4CA62087B76F00F22EAF /* Ring.swift in Sources */,
 				796D4CBC2087B76F00F22EAF /* NearSemiring.swift in Sources */,
 				796D4C7C2087B73900F22EAF /* Monoid.swift in Sources */,
+				793EEB752088BAC200B8953C /* Setter.swift in Sources */,
 				793EEB482087C37700B8953C /* RingControl.swift in Sources */,
 				796D4C772087B6B200F22EAF /* Reducer.swift in Sources */,
+				793EEB722088BAC200B8953C /* Index.swift in Sources */,
 				796D4CB32087B76F00F22EAF /* Collection.swift in Sources */,
 				796D4CB72087B76F00F22EAF /* Semiring.swift in Sources */,
 				796D4C5F2087B48600F22EAF /* Incremental+NSObject.swift in Sources */,
 				796D4CC12087B76F00F22EAF /* String.swift in Sources */,
+				793EEB812088BB4700B8953C /* Choice.swift in Sources */,
 				796D4CC22087B76F00F22EAF /* EuclideanRing.swift in Sources */,
 				796D4CAA2087B76F00F22EAF /* Comparable.swift in Sources */,
 				796D4CA32087B76F00F22EAF /* Curry.swift in Sources */,

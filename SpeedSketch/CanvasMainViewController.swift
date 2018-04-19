@@ -114,14 +114,15 @@ class CanvasMainViewController: UIViewController, UIGestureRecognizerDelegate {
             ringView.addSubview(imageView)
         }
 
-        globalRefs += [state.observe {
-            cgView.displayOptions = $0.strokeDisplayOption
-        }]
+
 
         clearButton = addButton(title: "clear", action: #selector(clearButtonAction(_:)) )
         
         setupPencilUI()
 
+
+        _ = cgView
+            |> \.bindings[\.displayOption] .~ state[\.strokeDisplayOption]
     }
 
 // MARK: View setup helpers.
@@ -162,9 +163,9 @@ class CanvasMainViewController: UIViewController, UIGestureRecognizerDelegate {
     
     func setupConfigurations() {
         configurations = [
-            { self.cgView.displayOptions = .calligraphy },
-            { self.cgView.displayOptions = .ink },
-            { self.cgView.displayOptions = .debug },
+            { self.cgView.displayOption = .calligraphy },
+            { self.cgView.displayOption = .ink },
+            { self.cgView.displayOption = .debug },
         ]
         configurations.first?()
     }
