@@ -8,11 +8,11 @@
 
 import Foundation
 
-struct State: Equatable {
+struct State: Equatable, Codable {
     var strokeDisplayOption: StrokeDisplayOption = .debug
 }
 
-enum StrokeDisplayOption {
+enum StrokeDisplayOption: String, Codable {
     case debug
     case calligraphy
     case ink

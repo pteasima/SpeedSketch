@@ -36,3 +36,5 @@ var dispatch: (Action) -> () {
 var state: I<State> {
     return (UIApplication.shared.delegate as! AppDelegate).driver.state
 }
+
+var globalRefs = [Any]()

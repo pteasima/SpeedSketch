@@ -9,26 +9,15 @@
 import Foundation
 
 enum Action {
-    case selectDebug
-    case selectCalligraphy
-    case selectInk
+    case selectStroke(StrokeDisplayOption)
 }
 
 func update<C: Command & PrintCommand>(state: inout State, action: Action) -> C {
 
-    func setStroke(_ option: StrokeDisplayOption) -> C {
+    switch action {
+    case let .selectStroke(option):
         state.strokeDisplayOption = option
         return C.print(option)
-//        return .empty
-    }
-
-    switch action {
-    case .selectDebug:
-        return setStroke(.debug)
-    case .selectCalligraphy:
-        return setStroke(.calligraphy)
-    case .selectInk:
-        return setStroke(.ink)
     }
 }
 

@@ -90,29 +90,38 @@ class CanvasMainViewController: UIViewController, UIGestureRecognizerDelegate {
         let borderWidth = CGFloat(1.0)
         let ringOutset = ringDiameter / 2.0  - (floor(sqrt((ringDiameter * ringDiameter) / 8.0) - borderWidth))
         let ringFrame = CGRect(x: -ringOutset, y: self.view.bounds.height - ringDiameter + ringOutset, width: ringDiameter, height: ringDiameter)
-        let ringControl = RingControl(frame:ringFrame, itemCount:configurations.count)
+        let ringControl = RingControl(frame:ringFrame, itemCount: StrokeDisplayOption.allCases.count)
         ringControl.autoresizingMask = [.flexibleRightMargin, .flexibleTopMargin]
         self.view.addSubview(ringControl)
         leftRingControl = ringControl
         let imageNames = ["Calligraphy", "Ink", "Debug"]
         for (index, ringView) in leftRingControl.ringViews.enumerated() {
-            ringView.actionClosure = {
-                switch index {
-                case 0: dispatch(.selectDebug)
-                case 1: dispatch(.selectCalligraphy)
-                default: dispatch(.selectInk)
-                }
+            let strokeOption: StrokeDisplayOption
+            switch index {
+            case 0: strokeOption = .debug
+            case 1: strokeOption = .calligraphy
+            default: strokeOption = .ink
             }
-            //ringView.actionClosure = configurations[index]
+            ringView.actionClosure = {
+                dispatch(.selectStroke(strokeOption))
+            }
+            globalRefs += [state.observe {
+                ringView.selected = ($0.strokeDisplayOption == strokeOption)
+            }]
             let imageView = UIImageView(frame: ringView.bounds.insetBy(dx: ringImageInset, dy: ringImageInset))
             imageView.image = UIImage(named: imageNames[index])
             imageView.autoresizingMask = [.flexibleLeftMargin, .flexibleRightMargin, .flexibleTopMargin, .flexibleBottomMargin]
             ringView.addSubview(imageView)
         }
-        
+
+        globalRefs += [state.observe {
+            cgView.displayOptions = $0.strokeDisplayOption
+        }]
+
         clearButton = addButton(title: "clear", action: #selector(clearButtonAction(_:)) )
         
         setupPencilUI()
+
     }
 
 // MARK: View setup helpers.
@@ -158,14 +167,6 @@ class CanvasMainViewController: UIViewController, UIGestureRecognizerDelegate {
             { self.cgView.displayOptions = .debug },
         ]
         configurations.first?()
-    }
-    
-    func toggleConfiguration(_ sender: UIButton) {
-        if let index = Int(sender.titleLabel!.text!) {
-            let nextIndex = (index + 1) % configurations.count
-            configurations[nextIndex]()
-            sender.setTitle(String(nextIndex), for: [])
-        }
     }
     
     func receivedAllUpdatesForStroke(_ stroke: Stroke) {
