@@ -16,7 +16,7 @@ private var storageKey = 0
 extension BindingsProvider {
     var bindings: Bindings<Self> {
         get { return Bindings(self) }
-        set { /*needed to enable setting the keyPath, do nothing here*/ }
+        set { /*needed to enable writing to the keyPath, do nothing here*/ }
     }
     //we store the AnyI just for shits. We could probably get away with not storing it and returning empty from the subscript getter to make the compiler happy. Maybe it will be usefull in debugging and testing?
     fileprivate var bindingsStorage: DictWrapper<AnyKeyPath, (Disposable, AnyI)> {
@@ -51,12 +51,3 @@ struct Bindings<Base: BindingsProvider> {
         }
     }
 }
-
-//struct S {
-//    var foo: UIColor
-//}
-//
-////let i = I(constant:UIColor.red).map(Optional.init)
-////
-////let v = UIView()
-////    |>  set(\UIView.bindings[\.backgroundColor])(i)
