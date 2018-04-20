@@ -42,6 +42,7 @@
 		793EEB862088DF1700B8953C /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB852088DF1700B8953C /* Layout.swift */; };
 		793EEB882089148200B8953C /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB872089148200B8953C /* Constraints.swift */; };
 		793EEB8A2089247800B8953C /* KeyPath+Any.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB892089247800B8953C /* KeyPath+Any.swift */; };
+		793EEB8D2089E05C00B8953C /* TupleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB8C2089E05C00B8953C /* TupleType.swift */; };
 		796D4C5E2087B48600F22EAF /* IncrementalStdLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C482087B48400F22EAF /* IncrementalStdLib.swift */; };
 		796D4C5F2087B48600F22EAF /* Incremental+NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C492087B48400F22EAF /* Incremental+NSObject.swift */; };
 		796D4C602087B48600F22EAF /* Incremental.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C4A2087B48500F22EAF /* Incremental.swift */; };
@@ -124,6 +125,7 @@
 		793EEB852088DF1700B8953C /* Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
 		793EEB872089148200B8953C /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
 		793EEB892089247800B8953C /* KeyPath+Any.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyPath+Any.swift"; sourceTree = "<group>"; };
+		793EEB8C2089E05C00B8953C /* TupleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TupleType.swift; sourceTree = "<group>"; };
 		796D4C482087B48400F22EAF /* IncrementalStdLib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncrementalStdLib.swift; sourceTree = "<group>"; };
 		796D4C492087B48400F22EAF /* Incremental+NSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Incremental+NSObject.swift"; sourceTree = "<group>"; };
 		796D4C4A2087B48500F22EAF /* Incremental.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Incremental.swift; sourceTree = "<group>"; };
@@ -274,6 +276,14 @@
 			path = Layout;
 			sourceTree = "<group>";
 		};
+		793EEB8B2089E05200B8953C /* Tuple */ = {
+			isa = PBXGroup;
+			children = (
+				793EEB8C2089E05C00B8953C /* TupleType.swift */,
+			);
+			path = Tuple;
+			sourceTree = "<group>";
+		};
 		796D4C462087B33600F22EAF /* Prelude */ = {
 			isa = PBXGroup;
 			children = (
@@ -313,6 +323,7 @@
 		796D4C7A2087B70100F22EAF /* Pointfreeco */ = {
 			isa = PBXGroup;
 			children = (
+				793EEB8B2089E05200B8953C /* Tuple */,
 				793EEB792088BB4700B8953C /* Either */,
 				793EEB642088BAC100B8953C /* Optics */,
 				796D4C7B2087B73900F22EAF /* Monoid.swift */,
@@ -515,6 +526,7 @@
 				796D4CA62087B76F00F22EAF /* Ring.swift in Sources */,
 				796D4CBC2087B76F00F22EAF /* NearSemiring.swift in Sources */,
 				796D4C7C2087B73900F22EAF /* Monoid.swift in Sources */,
+				793EEB8D2089E05C00B8953C /* TupleType.swift in Sources */,
 				793EEB752088BAC200B8953C /* Setter.swift in Sources */,
 				793EEB482087C37700B8953C /* RingControl.swift in Sources */,
 				796D4C772087B6B200F22EAF /* Reducer.swift in Sources */,

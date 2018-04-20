@@ -147,7 +147,19 @@ class CanvasMainViewController: UIViewController, UIGestureRecognizerDelegate {
             |> \.bindings[\.displayOption] .~ state[\.strokeDisplayOption]
 //            |> \.bindings[\.constraintsTo[view]] .~ I(constant: Optional([]))
 
+        let color: I<UIColor!> = state[\.color]
+            .map(eq: const(false)) { _ in
+                UIColor(red: 1, green: 1, blue: 1, alpha: 1.0)
+        }
 
+        let label = UILabel()
+            |> \.text .~ "hello"
+            |> \.bindings[\.textColor] .~ color //color is chris eidhof's incremental value
+            |> \.constraintsTo[view] .~ sizeToParent() //sizeToParent is an array of chris eidhof inspired Constraint functions
+            |> \.bindings[\.constraintsTo[view]] .~ I(constant: []) //we can also do reactive Constraints
+
+
+        print(label)
     }
 
 // MARK: View setup helpers.
