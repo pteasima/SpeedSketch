@@ -123,7 +123,7 @@ class CanvasMainViewController: UIViewController, UIGestureRecognizerDelegate {
 
         _ = ringControl
 //            |> \.constraintsTo[view] .~ sizeToParent()
-            |> \.bindings[\.constraintsTo[view]] .~ state[\.strokeDisplayOption].map(eq: { _ in false }) {
+            |> \.bindings[\.animated[(\.constraintsTo[view], in: view)]] .~ state[\.strokeDisplayOption].map(eq: { _ in false }) {
                 $0 == .ink ? [
                                 equal(\.leftAnchor),
                                 equal(\.bottomAnchor),
@@ -143,23 +143,25 @@ class CanvasMainViewController: UIViewController, UIGestureRecognizerDelegate {
 
         }
 
+
         _ = cgView
             |> \.bindings[\.displayOption] .~ state[\.strokeDisplayOption]
 //            |> \.bindings[\.constraintsTo[view]] .~ I(constant: Optional([]))
 
-        let color: I<UIColor!> = state[\.color]
-            .map(eq: const(false)) { _ in
-                UIColor(red: 1, green: 1, blue: 1, alpha: 1.0)
-        }
-
-        let label = UILabel()
-            |> \.text .~ "hello"
-            |> \.bindings[\.textColor] .~ color //color is chris eidhof's incremental value
-            |> \.constraintsTo[view] .~ sizeToParent() //sizeToParent is an array of chris eidhof inspired Constraint functions
-            |> \.bindings[\.constraintsTo[view]] .~ I(constant: []) //we can also do reactive Constraints
+//        let color: I<UIColor!> = state[\.color]
+//            .map(eq: const(false), const(.red))
 
 
-        print(label)
+
+//        let label = UILabel()
+//            |> \.text .~ "hello"
+////            |> \.bindings[\.textColor] .~ color //color is chris eidhof's incremental value
+//        |> \.animated[\.textColor] .~ .green
+//            |> \.constraintsTo[view] .~ sizeToParent() //sizeToParent is an array of chris eidhof inspired Constraint functions
+//            |> \.bindings[\.constraintsTo[view]] .~ I(constant: []) //we can also do reactive Constraints
+
+
+//        print(label)
     }
 
 // MARK: View setup helpers.
@@ -377,5 +379,27 @@ extension CanvasMainViewController: UIScrollViewDelegate {
         }
     }
 }
+
+//func colorFromRgb(rgb: Tuple3<Double,Double,Double>) -> UIColor {
+//    let rgb = lower(rgb)
+//    let initMethod = curry(UIColor.init(red:green:blue:alpha:)) <| 1.0
+//    return initMethod(CGFloat(rgb.0))(CGFloat(rgb.1))(CGFloat(rgb.2)))
+//}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

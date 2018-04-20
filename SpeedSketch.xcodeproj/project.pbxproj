@@ -17,7 +17,6 @@
 		793EEB4F2087C37700B8953C /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB432087C37600B8953C /* RingView.swift */; };
 		793EEB502087C37700B8953C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB442087C37600B8953C /* AppDelegate.swift */; };
 		793EEB512087C37700B8953C /* CGMathExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB452087C37600B8953C /* CGMathExtensions.swift */; };
-		793EEB522087C37700B8953C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 793EEB462087C37600B8953C /* Info.plist */; };
 		793EEB532087C37700B8953C /* StrokeCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB472087C37600B8953C /* StrokeCollection.swift */; };
 		793EEB592087C3B200B8953C /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB582087C3B200B8953C /* State.swift */; };
 		793EEB5C2087C57500B8953C /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB5B2087C57500B8953C /* Driver.swift */; };
@@ -43,6 +42,7 @@
 		793EEB882089148200B8953C /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB872089148200B8953C /* Constraints.swift */; };
 		793EEB8A2089247800B8953C /* KeyPath+Any.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB892089247800B8953C /* KeyPath+Any.swift */; };
 		793EEB8D2089E05C00B8953C /* TupleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB8C2089E05C00B8953C /* TupleType.swift */; };
+		793EEB93208A063E00B8953C /* Animated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB92208A063E00B8953C /* Animated.swift */; };
 		796D4C5E2087B48600F22EAF /* IncrementalStdLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C482087B48400F22EAF /* IncrementalStdLib.swift */; };
 		796D4C5F2087B48600F22EAF /* Incremental+NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C492087B48400F22EAF /* Incremental+NSObject.swift */; };
 		796D4C602087B48600F22EAF /* Incremental.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C4A2087B48500F22EAF /* Incremental.swift */; };
@@ -126,6 +126,7 @@
 		793EEB872089148200B8953C /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
 		793EEB892089247800B8953C /* KeyPath+Any.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyPath+Any.swift"; sourceTree = "<group>"; };
 		793EEB8C2089E05C00B8953C /* TupleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TupleType.swift; sourceTree = "<group>"; };
+		793EEB92208A063E00B8953C /* Animated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animated.swift; sourceTree = "<group>"; };
 		796D4C482087B48400F22EAF /* IncrementalStdLib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncrementalStdLib.swift; sourceTree = "<group>"; };
 		796D4C492087B48400F22EAF /* Incremental+NSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Incremental+NSObject.swift"; sourceTree = "<group>"; };
 		796D4C4A2087B48500F22EAF /* Incremental.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Incremental.swift; sourceTree = "<group>"; };
@@ -284,9 +285,18 @@
 			path = Tuple;
 			sourceTree = "<group>";
 		};
+		793EEB91208A063000B8953C /* Animated */ = {
+			isa = PBXGroup;
+			children = (
+				793EEB92208A063E00B8953C /* Animated.swift */,
+			);
+			path = Animated;
+			sourceTree = "<group>";
+		};
 		796D4C462087B33600F22EAF /* Prelude */ = {
 			isa = PBXGroup;
 			children = (
+				793EEB91208A063000B8953C /* Animated */,
 				793EEB842088DF0B00B8953C /* Layout */,
 				793EEB612088937C00B8953C /* Bindings */,
 				796D4C7A2087B70100F22EAF /* Pointfreeco */,
@@ -454,7 +464,6 @@
 			files = (
 				793EEB4B2087C37700B8953C /* Assets.xcassets in Resources */,
 				793EEB4C2087C37700B8953C /* LaunchScreen.storyboard in Resources */,
-				793EEB522087C37700B8953C /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +520,7 @@
 				793EEB782088BAC200B8953C /* Star.swift in Sources */,
 				796D4CAF2087B76F00F22EAF /* Optional.swift in Sources */,
 				796D4CBF2087B76F00F22EAF /* Field.swift in Sources */,
+				793EEB93208A063E00B8953C /* Animated.swift in Sources */,
 				793EEB532087C37700B8953C /* StrokeCollection.swift in Sources */,
 				793EEB802088BB4700B8953C /* EitherIO.swift in Sources */,
 				796D4CA92087B76F00F22EAF /* Unit.swift in Sources */,
