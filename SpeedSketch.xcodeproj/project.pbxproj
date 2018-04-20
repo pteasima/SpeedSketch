@@ -41,6 +41,7 @@
 		793EEB832088C81400B8953C /* Lens+KeyPathExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB822088C81400B8953C /* Lens+KeyPathExtensions.swift */; };
 		793EEB862088DF1700B8953C /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB852088DF1700B8953C /* Layout.swift */; };
 		793EEB882089148200B8953C /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB872089148200B8953C /* Constraints.swift */; };
+		793EEB8A2089247800B8953C /* KeyPath+Any.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793EEB892089247800B8953C /* KeyPath+Any.swift */; };
 		796D4C5E2087B48600F22EAF /* IncrementalStdLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C482087B48400F22EAF /* IncrementalStdLib.swift */; };
 		796D4C5F2087B48600F22EAF /* Incremental+NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C492087B48400F22EAF /* Incremental+NSObject.swift */; };
 		796D4C602087B48600F22EAF /* Incremental.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C4A2087B48500F22EAF /* Incremental.swift */; };
@@ -122,6 +123,7 @@
 		793EEB822088C81400B8953C /* Lens+KeyPathExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lens+KeyPathExtensions.swift"; sourceTree = "<group>"; };
 		793EEB852088DF1700B8953C /* Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
 		793EEB872089148200B8953C /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
+		793EEB892089247800B8953C /* KeyPath+Any.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyPath+Any.swift"; sourceTree = "<group>"; };
 		796D4C482087B48400F22EAF /* IncrementalStdLib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncrementalStdLib.swift; sourceTree = "<group>"; };
 		796D4C492087B48400F22EAF /* Incremental+NSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Incremental+NSObject.swift"; sourceTree = "<group>"; };
 		796D4C4A2087B48500F22EAF /* Incremental.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Incremental.swift; sourceTree = "<group>"; };
@@ -281,6 +283,7 @@
 				796D4C732087B5B600F22EAF /* ElmArchitecture */,
 				796D4C472087B34900F22EAF /* Incremental */,
 				793EEB5F20888B7F00B8953C /* RawRepresentable+AllCases.swift */,
+				793EEB892089247800B8953C /* KeyPath+Any.swift */,
 			);
 			path = Prelude;
 			sourceTree = "<group>";
@@ -524,6 +527,7 @@
 				796D4CC22087B76F00F22EAF /* EuclideanRing.swift in Sources */,
 				796D4CAA2087B76F00F22EAF /* Comparable.swift in Sources */,
 				796D4CA32087B76F00F22EAF /* Curry.swift in Sources */,
+				793EEB8A2089247800B8953C /* KeyPath+Any.swift in Sources */,
 				796D4C602087B48600F22EAF /* Incremental.swift in Sources */,
 				796D4CAC2087B76F00F22EAF /* PrecedenceGroups.swift in Sources */,
 			);
