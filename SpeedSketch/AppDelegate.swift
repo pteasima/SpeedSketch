@@ -16,8 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = [:]) -> Bool {
 
-print(a.foo)
-
         // Minimal basic setup without a storyboard.
         let localWindow = UIWindow(frame: UIScreen.main.bounds)
         localWindow.rootViewController = CanvasMainViewController()

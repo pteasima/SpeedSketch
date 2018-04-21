@@ -47,7 +47,6 @@ struct Layout<Base: UIView> {
             let newConstraints = newValue.map { $0(base, to) }
             NSLayoutConstraint.activate(newConstraints)
             base.layoutStorage.dict[to] = Array(zip(newValue, newConstraints))
-            base.superview!.layoutIfNeeded()
         }
     }
 }

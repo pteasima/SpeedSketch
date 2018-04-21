@@ -22,15 +22,15 @@ struct KeyPathCast<Base> {
     }
 }
 
-struct A { //works for classes too
-    var foo: String
-}
-extension A: WritableKeyPathEraser { }
-
-let a = A(foo: "hello") //goodbye
-    |> \.any[\.foo] .~ ("goodbye" as Any)
-
-
+//struct A { //works for classes too
+//    var foo: String
+//}
+//extension A: WritableKeyPathEraser { }
+//
+//let a = A(foo: "hello") //goodbye
+//    |> \.any[\.foo] .~ ("goodbye" as Any)
+//
+//
 
 
 

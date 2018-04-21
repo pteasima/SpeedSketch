@@ -123,7 +123,7 @@ class CanvasMainViewController: UIViewController, UIGestureRecognizerDelegate {
 
         _ = ringControl
 //            |> \.constraintsTo[view] .~ sizeToParent()
-            |> \.bindings[\.animated[(\.constraintsTo[view], in: view)]] .~ state[\.strokeDisplayOption].map(eq: { _ in false }) {
+            |> \.bindings[\.animated[(\.constraintsTo[view], by: view.layoutAnimator)]] .~ state[\.strokeDisplayOption].map(eq: { _ in false }) {
                 $0 == .ink ? [
                                 equal(\.leftAnchor),
                                 equal(\.bottomAnchor),
@@ -143,6 +143,7 @@ class CanvasMainViewController: UIViewController, UIGestureRecognizerDelegate {
 
         }
 
+        view.layoutAnimator.startAnimation()
 
         _ = cgView
             |> \.bindings[\.displayOption] .~ state[\.strokeDisplayOption]
@@ -151,7 +152,7 @@ class CanvasMainViewController: UIViewController, UIGestureRecognizerDelegate {
 //        let color: I<UIColor!> = state[\.color]
 //            .map(eq: const(false), const(.red))
 
-
+//        view.layoutAnimator.startAnimation()
 
 //        let label = UILabel()
 //            |> \.text .~ "hello"

@@ -43,4 +43,16 @@ struct Animated<Base: UIView> {
             }
         }
     }
+
+    subscript<Value>(_ params: (ReferenceWritableKeyPath<Base, Value>, by: LayoutAnimator)) -> Value {
+        get {
+            return base[keyPath: params.0]
+        }
+        set {
+            params.by.addAnimations { [weak base = self.base, weak view = params.by.view] in
+                base?[keyPath: params.0] = newValue
+                view?.layoutIfNeeded()
+            }
+        }
+    }
 }

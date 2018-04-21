@@ -87,6 +87,7 @@
 		796D4CC22087B76F00F22EAF /* EuclideanRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C9E2087B76E00F22EAF /* EuclideanRing.swift */; };
 		796D4CC32087B76F00F22EAF /* Semigroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C9F2087B76E00F22EAF /* Semigroup.swift */; };
 		796D4CC42087B76F00F22EAF /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4CA02087B76E00F22EAF /* Array.swift */; };
+		79E5CD1B208BBD8A0047F2E3 /* LayoutAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E5CD1A208BBD8A0047F2E3 /* LayoutAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -171,6 +172,7 @@
 		796D4C9E2087B76E00F22EAF /* EuclideanRing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EuclideanRing.swift; sourceTree = "<group>"; };
 		796D4C9F2087B76E00F22EAF /* Semigroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Semigroup.swift; sourceTree = "<group>"; };
 		796D4CA02087B76E00F22EAF /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		79E5CD1A208BBD8A0047F2E3 /* LayoutAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutAnimator.swift; sourceTree = "<group>"; };
 		F214544C1CFB4E23003F77B0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F2D0CD8F1CDD78CC0097775C /* SpeedSketch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeedSketch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -273,6 +275,7 @@
 			children = (
 				793EEB852088DF1700B8953C /* Layout.swift */,
 				793EEB872089148200B8953C /* Constraints.swift */,
+				79E5CD1A208BBD8A0047F2E3 /* LayoutAnimator.swift */,
 			);
 			path = Layout;
 			sourceTree = "<group>";
@@ -510,6 +513,7 @@
 				793EEB832088C81400B8953C /* Lens+KeyPathExtensions.swift in Sources */,
 				796D4CA42087B76F00F22EAF /* Equatable.swift in Sources */,
 				796D4CB22087B76F00F22EAF /* FreeNearSemiring.swift in Sources */,
+				79E5CD1B208BBD8A0047F2E3 /* LayoutAnimator.swift in Sources */,
 				793EEB6F2088BAC200B8953C /* Getter.swift in Sources */,
 				796D4CBE2087B76F00F22EAF /* Function.swift in Sources */,
 				793EEB512087C37700B8953C /* CGMathExtensions.swift in Sources */,
