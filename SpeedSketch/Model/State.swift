@@ -13,6 +13,7 @@ struct State: Equatable/*, Codable*/ {
     var strokeDisplayOption: StrokeDisplayOption = .debug
 
     var color: Tuple3<Double,Double,Double> = lift((0.5,0.5,0.5))
+    var animationProgress: Float = 0.5
 }
 
 enum StrokeDisplayOption: String, Codable {

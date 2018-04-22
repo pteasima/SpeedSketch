@@ -21,26 +21,22 @@ extension LayoutProvider where Self: UIView {
 }
 extension UIView: LayoutProvider { }
 
-private class DictWrapper<K: Hashable,V> {
-    var dict: [K: V] = [:]
-}
-
 struct Layout<Base: UIView> {
     private let base: Base
     init(_ base: Base) {
         self.base = base
     }
 
-    subscript(_ to: UIView) -> [Constraint]? {
+    subscript(_ to: UIView) -> [Constraint] {
         get {
-            return base.layoutStorage.dict[to]?.map { $0.0 }
+            return base.layoutStorage.dict[to]?.map { $0.0 } ?? []
         }
         set {
             base.translatesAutoresizingMaskIntoConstraints = false
             if let oldConstraints = base.layoutStorage.dict[to]?.map({ $0.1 }) {
                 NSLayoutConstraint.deactivate(oldConstraints)
             }
-            guard let newValue = newValue else {
+            guard !newValue.isEmpty else {
                 base.layoutStorage.dict.removeValue(forKey: to)
                 return
             }

@@ -45,7 +45,7 @@ precedencegroup infixl5 {
 precedencegroup infixr5 {
   associativity: right
   higherThan: infixl5
-  lowerThan: AdditionPrecedence
+  lowerThan: AdditionPrecedence, CastingPrecedence
 }
 precedencegroup infixl6 {
   associativity: left

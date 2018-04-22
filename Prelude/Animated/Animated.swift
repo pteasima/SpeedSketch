@@ -10,20 +10,8 @@ extension AnimatedProvider where Self: UIView {
         get { return Animated(self) }
         set {  }
     }
-//    // TODO: Capturing the view surely creates a leak, we should have a weak wrapper that remembers the hashValue even after the view deallocates
-//    fileprivate var animatedStorage: DictWrapper<UIView, [Any]> {
-//        return objc_getAssociatedObject(self, &storageKey) as? DictWrapper<UIView, [Any]> ?? {
-//            let newStorage = DictWrapper<UIView, [Any]>()
-//            objc_setAssociatedObject(self, &storageKey, newStorage, .OBJC_ASSOCIATION_RETAIN)
-//            return newStorage
-//            }()
-//    }
 }
 extension UIView: AnimatedProvider { }
-
-private class DictWrapper<K: Hashable,V> {
-    var dict: [K: V] = [:]
-}
 
 struct Animated<Base: UIView> {
     private var base: Base

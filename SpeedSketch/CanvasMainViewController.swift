@@ -120,30 +120,48 @@ class CanvasMainViewController: UIViewController, UIGestureRecognizerDelegate {
         
         setupPencilUI()
 
+        // TODO: slider stops working if I tap elsewhere 2-3 times
+        _ = UISlider()
+        |> UIView.added(into: view)
+        <> (\.minimumValue .~ 0)
+        <> (\.bindings[\.value] .~ state[\.animationProgress]) as Endo<UISlider>
+        <> (\.maximumValue .~ 1) as Endo<UISlider>
+        <> (\.constraintsTo[view] .~ sizeToParent()) as Endo<UISlider>
+        <> (\.events[.valueChanged] .~ { _, slider in dispatch(.sliderValueChanged(slider.value))}) as Endo<UISlider>
 
+        view.layoutIfNeeded()
+
+        let ringConstraints = state[\.strokeDisplayOption].map(eq: { _ in false }) {
+            $0 == .ink ? [
+                equal(\.leftAnchor),
+                equal(\.bottomAnchor),
+                //                    equal(\.centerXAnchor),
+                //                    equal(\.centerYAnchor),
+                equal(\.widthAnchor, to: 100), // this ignores `view`, should have its own keypath
+                equal(\.heightAnchor, to: 100),
+                ] : [
+                    //            equal(\.leftAnchor),
+                    //            equal(\.bottomAnchor),
+                    equal(\.centerXAnchor),
+                    equal(\.centerYAnchor),
+                    equal(\.widthAnchor, to: 100),
+                    equal(\.heightAnchor, to: 100),
+            ]
+        } as I<[Constraint]>
         _ = ringControl
 //            |> \.constraintsTo[view] .~ sizeToParent()
-            |> \.bindings[\.animated[(\.constraintsTo[view], by: view.layoutAnimator)]] .~ state[\.strokeDisplayOption].map(eq: { _ in false }) {
-                $0 == .ink ? [
-                                equal(\.leftAnchor),
-                                equal(\.bottomAnchor),
-//                    equal(\.centerXAnchor),
-//                    equal(\.centerYAnchor),
-                    equal(\.widthAnchor, to: 100), // this ignores `view`, should have its own keypath
-                    equal(\.heightAnchor, to: 100),
-                    ] : [
-                        //            equal(\.leftAnchor),
-                        //            equal(\.bottomAnchor),
-                        equal(\.centerXAnchor),
-                        equal(\.centerYAnchor),
-                        equal(\.widthAnchor, to: 100),
-                        equal(\.heightAnchor, to: 100),
-                ]
+            |> ((\.bindings[\.animated[(\.constraintsTo[view], by: view.layoutAnimator)]] .~ ringConstraints) as Endo<RingControl>)
 
 
-        }
 
-        view.layoutAnimator.startAnimation()
+        _ = view
+        |> \.bindings[\.layoutAnimator.fractionComplete] .~ state[\.animationProgress].map(CGFloat.init)
+
+//
+//        DispatchQueue.main.async {
+//            self.view.layoutAnimator.startAnimation()
+////            self.view.layoutAnimator.pauseAnimation()
+//        }
 
         _ = cgView
             |> \.bindings[\.displayOption] .~ state[\.strokeDisplayOption]

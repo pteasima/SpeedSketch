@@ -87,7 +87,13 @@
 		796D4CC22087B76F00F22EAF /* EuclideanRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C9E2087B76E00F22EAF /* EuclideanRing.swift */; };
 		796D4CC32087B76F00F22EAF /* Semigroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4C9F2087B76E00F22EAF /* Semigroup.swift */; };
 		796D4CC42087B76F00F22EAF /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796D4CA02087B76E00F22EAF /* Array.swift */; };
+		797D0365208BFDC0005A6F9B /* UIViewPropertyAnimator+Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797D0364208BFDC0005A6F9B /* UIViewPropertyAnimator+Progress.swift */; };
+		797D036B208BFFBA005A6F9B /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797D0368208BFFB9005A6F9B /* Event.swift */; };
+		797D036D208BFFBA005A6F9B /* UIKit+Frp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797D036A208BFFB9005A6F9B /* UIKit+Frp.swift */; };
+		797D0371208C7C41005A6F9B /* DictWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797D0370208C7C41005A6F9B /* DictWrapper.swift */; };
+		797D0374208C8DC6005A6F9B /* Closures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 797D0373208C8DC6005A6F9B /* Closures.framework */; };
 		79E5CD1B208BBD8A0047F2E3 /* LayoutAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E5CD1A208BBD8A0047F2E3 /* LayoutAnimator.swift */; };
+		79F784E6208BE60200141F66 /* Subview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F784E5208BE60200141F66 /* Subview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -172,7 +178,13 @@
 		796D4C9E2087B76E00F22EAF /* EuclideanRing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EuclideanRing.swift; sourceTree = "<group>"; };
 		796D4C9F2087B76E00F22EAF /* Semigroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Semigroup.swift; sourceTree = "<group>"; };
 		796D4CA02087B76E00F22EAF /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		797D0364208BFDC0005A6F9B /* UIViewPropertyAnimator+Progress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewPropertyAnimator+Progress.swift"; sourceTree = "<group>"; };
+		797D0368208BFFB9005A6F9B /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		797D036A208BFFB9005A6F9B /* UIKit+Frp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIKit+Frp.swift"; sourceTree = "<group>"; };
+		797D0370208C7C41005A6F9B /* DictWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictWrapper.swift; sourceTree = "<group>"; };
+		797D0373208C8DC6005A6F9B /* Closures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Closures.framework; path = Carthage/Build/iOS/Closures.framework; sourceTree = "<group>"; };
 		79E5CD1A208BBD8A0047F2E3 /* LayoutAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutAnimator.swift; sourceTree = "<group>"; };
+		79F784E5208BE60200141F66 /* Subview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subview.swift; sourceTree = "<group>"; };
 		F214544C1CFB4E23003F77B0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F2D0CD8F1CDD78CC0097775C /* SpeedSketch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeedSketch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -182,6 +194,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				797D0374208C8DC6005A6F9B /* Closures.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +312,7 @@
 		796D4C462087B33600F22EAF /* Prelude */ = {
 			isa = PBXGroup;
 			children = (
+				79F784E4208BE5E000141F66 /* UIKitExtensions */,
 				793EEB91208A063000B8953C /* Animated */,
 				793EEB842088DF0B00B8953C /* Layout */,
 				793EEB612088937C00B8953C /* Bindings */,
@@ -307,6 +321,7 @@
 				796D4C472087B34900F22EAF /* Incremental */,
 				793EEB5F20888B7F00B8953C /* RawRepresentable+AllCases.swift */,
 				793EEB892089247800B8953C /* KeyPath+Any.swift */,
+				797D0370208C7C41005A6F9B /* DictWrapper.swift */,
 			);
 			path = Prelude;
 			sourceTree = "<group>";
@@ -336,6 +351,7 @@
 		796D4C7A2087B70100F22EAF /* Pointfreeco */ = {
 			isa = PBXGroup;
 			children = (
+				797D0367208BFFB9005A6F9B /* Frp */,
 				793EEB8B2089E05200B8953C /* Tuple */,
 				793EEB792088BB4700B8953C /* Either */,
 				793EEB642088BAC100B8953C /* Optics */,
@@ -380,9 +396,28 @@
 			path = Pointfreeco;
 			sourceTree = "<group>";
 		};
+		797D0367208BFFB9005A6F9B /* Frp */ = {
+			isa = PBXGroup;
+			children = (
+				797D0368208BFFB9005A6F9B /* Event.swift */,
+				797D036A208BFFB9005A6F9B /* UIKit+Frp.swift */,
+			);
+			path = Frp;
+			sourceTree = "<group>";
+		};
+		79F784E4208BE5E000141F66 /* UIKitExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				79F784E5208BE60200141F66 /* Subview.swift */,
+				797D0364208BFDC0005A6F9B /* UIViewPropertyAnimator+Progress.swift */,
+			);
+			path = UIKitExtensions;
+			sourceTree = "<group>";
+		};
 		F25618401CDEC7BD00C01A7C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				797D0373208C8DC6005A6F9B /* Closures.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -416,6 +451,7 @@
 				F2D0CD8B1CDD78CC0097775C /* Sources */,
 				F2D0CD8C1CDD78CC0097775C /* Frameworks */,
 				F2D0CD8D1CDD78CC0097775C /* Resources */,
+				797D0372208C8D45005A6F9B /* carthage copy frameworks */,
 			);
 			buildRules = (
 			);
@@ -472,6 +508,25 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		797D0372208C8D45005A6F9B /* carthage copy frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Closures.framework",
+			);
+			name = "carthage copy frameworks";
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Closures.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F2D0CD8B1CDD78CC0097775C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -481,6 +536,7 @@
 				793EEB5C2087C57500B8953C /* Driver.swift in Sources */,
 				793EEB492087C37700B8953C /* CGDrawingEngine.swift in Sources */,
 				793EEB5E2087C6AE00B8953C /* Update.swift in Sources */,
+				797D036D208BFFBA005A6F9B /* UIKit+Frp.swift in Sources */,
 				793EEB7F2088BB4700B8953C /* Nested.swift in Sources */,
 				796D4C5E2087B48600F22EAF /* IncrementalStdLib.swift in Sources */,
 				793EEB702088BAC200B8953C /* Review.swift in Sources */,
@@ -522,6 +578,7 @@
 				793EEB4D2087C37700B8953C /* StrokeGestureRecognizer.swift in Sources */,
 				796D4CA22087B76F00F22EAF /* Filterable.swift in Sources */,
 				793EEB782088BAC200B8953C /* Star.swift in Sources */,
+				79F784E6208BE60200141F66 /* Subview.swift in Sources */,
 				796D4CAF2087B76F00F22EAF /* Optional.swift in Sources */,
 				796D4CBF2087B76F00F22EAF /* Field.swift in Sources */,
 				793EEB93208A063E00B8953C /* Animated.swift in Sources */,
@@ -535,6 +592,7 @@
 				796D4CB82087B76F00F22EAF /* CommutativeRing.swift in Sources */,
 				793EEB4A2087C37700B8953C /* CanvasMainViewController.swift in Sources */,
 				796D4CC02087B76F00F22EAF /* Tagged.swift in Sources */,
+				797D0365208BFDC0005A6F9B /* UIViewPropertyAnimator+Progress.swift in Sources */,
 				793EEB762088BAC200B8953C /* KeyPath.swift in Sources */,
 				796D4C792087B6B900F22EAF /* Command.swift in Sources */,
 				796D4CA62087B76F00F22EAF /* Ring.swift in Sources */,
@@ -543,8 +601,10 @@
 				793EEB8D2089E05C00B8953C /* TupleType.swift in Sources */,
 				793EEB752088BAC200B8953C /* Setter.swift in Sources */,
 				793EEB482087C37700B8953C /* RingControl.swift in Sources */,
+				797D0371208C7C41005A6F9B /* DictWrapper.swift in Sources */,
 				796D4C772087B6B200F22EAF /* Reducer.swift in Sources */,
 				793EEB722088BAC200B8953C /* Index.swift in Sources */,
+				797D036B208BFFBA005A6F9B /* Event.swift in Sources */,
 				796D4CB32087B76F00F22EAF /* Collection.swift in Sources */,
 				796D4CB72087B76F00F22EAF /* Semiring.swift in Sources */,
 				796D4C5F2087B48600F22EAF /* Incremental+NSObject.swift in Sources */,
@@ -616,6 +676,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-Xfrontend -warn-long-expression-type-checking=100 -Xfrontend -warn-long-function-bodies=100";
 				SDKROOT = iphoneos;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -660,6 +721,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_SWIFT_FLAGS = "";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -673,6 +735,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SpeedSketch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.SpeedSketch";
@@ -689,6 +755,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SpeedSketch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.SpeedSketch";

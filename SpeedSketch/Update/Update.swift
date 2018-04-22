@@ -10,6 +10,7 @@ import Foundation
 
 enum Action {
     case selectStroke(StrokeDisplayOption)
+    case sliderValueChanged(Float)
 }
 
 func update<C: Command & PrintCommand>(state: inout State, action: Action) -> C {
@@ -18,6 +19,9 @@ func update<C: Command & PrintCommand>(state: inout State, action: Action) -> C 
     case let .selectStroke(option):
         state.strokeDisplayOption = option
         return C.print(option)
+    case let .sliderValueChanged(newValue):
+        state.animationProgress = newValue
+        return C.print(newValue)
     }
 }
 

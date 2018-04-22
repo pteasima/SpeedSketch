@@ -18,7 +18,7 @@ class LayoutAnimator: UIViewPropertyAnimator {
 extension LayoutProvider where Self: UIView{
     var layoutAnimator: LayoutAnimator {
         return objc_getAssociatedObject(self, &storageKey) as? LayoutAnimator ?? {
-            let newStorage = LayoutAnimator(duration: 15.0, dampingRatio: 0.8) { }
+            let newStorage = LayoutAnimator(duration: 100.0, dampingRatio: 0.8) { }
             newStorage.view = self
             objc_setAssociatedObject(self, &storageKey, newStorage, .OBJC_ASSOCIATION_RETAIN)
             return newStorage

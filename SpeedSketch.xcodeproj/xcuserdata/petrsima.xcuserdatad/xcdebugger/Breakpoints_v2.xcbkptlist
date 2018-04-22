@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Prelude/Animated/Animated.swift"
-            timestampString = "546035282.19201"
+            timestampString = "546087734.491848"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
             landmarkName = "Animated"
             landmarkType = "14">
          </BreakpointContent>

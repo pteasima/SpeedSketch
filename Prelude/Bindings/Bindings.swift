@@ -21,10 +21,6 @@ extension BindingsProvider {
 }
 extension NSObject: BindingsProvider { }
 
-private class DictWrapper<K: Hashable,V> {
-    var dict: [K: V] = [:]
-}
-
 struct Bindings<Base: BindingsProvider> {
     private let base: Base
     init(_ base: Base) {
